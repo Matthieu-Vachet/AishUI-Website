@@ -9,7 +9,7 @@ const config: Config = {
     theme: {
         extend: {
             fontFamily: {
-                Morpheus: ["Morpheus", "sans-serif"], // Utilisez un nom de votre choix pour la police
+                Morpheus: "var(--font-morpheus)", // Utilisez un nom de votre choix pour la police
             },
             colors: {
                 black: {
