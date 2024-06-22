@@ -1,8 +1,13 @@
 {
-    "builds": [
+    "headers": [
         {
-            "src": "next.config.js",
-            "use": "@vercel/next"
+            "source": "/fonts/(.*)",
+            "headers": [
+                {
+                    "key": "Content-Type",
+                    "value": "font/ttf"
+                }
+            ]
         }
     ]
 }
