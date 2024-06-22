@@ -5,7 +5,7 @@ import GridFeature from "@/components/grid-feature";
 
 const Retails = () => {
     return (
-        <section id="retailUi" className=" -mt-[10rem]">
+        <section id="retailUi" className=" -mt-[10rem] md:-mt-[20rem]">
             <div>
                 <Features color="	188, 144, 77" colorDark="188, 151, 98">
                     <Features.Main
@@ -20,7 +20,7 @@ const Retails = () => {
                 </Features>
             </div>
             <div className="text-center">
-                <h2 className="-mt-28 md:-mt-60 mb-4 text-4xl md:mb-7 md:text-5xl">
+                <h2 className="-mt-28 md:-mt-60 mb-4 text-4xl md:mb-7 lg:text-5xl">
                     Des fonctionnalités en constent évolution
                 </h2>
             </div>
