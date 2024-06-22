@@ -24,7 +24,7 @@
 
 @font-face {
     font-family: "Morpheus";
-    src: url("/fonts/MORPHEUS.ttf") format("truetype"); /* Ajustez le chemin d'accès selon l'emplacement de votre fichier */
+    src: url("/fonts/Morpheus.ttf") format("truetype"); /* Ajustez le chemin d'accès selon l'emplacement de votre fichier */
     font-weight: normal;
     font-style: normal;
 }
