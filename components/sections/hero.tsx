@@ -65,7 +65,7 @@ const Hero = () => {
                             width={160}
                             height={68}
                             priority
-                            className=" w-44 md:w-[25rem]"
+                            className=" w-44 md:w-[20rem] lg:w-[25rem]"
                         />
                         <Image
                             src="/image/wow-dragonflight.webp"
@@ -73,7 +73,7 @@ const Hero = () => {
                             width={136}
                             height={60}
                             priority
-                            className=" w-44 md:w-[21rem]"
+                            className=" w-44 md:w-[18rem] lg:w-[21rem]"
                         />
                     </div>
                 </div>
