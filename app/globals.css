@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 :root {
+    --font-morpheus: "Morpheus", sans-serif;
     --foreground-rgb: 0, 0, 0;
     --background-start-rgb: 214, 219, 220;
     --background-end-rgb: 255, 255, 255;
@@ -24,7 +25,7 @@
 
 @font-face {
     font-family: "Morpheus";
-    src: url("/fonts/Morpheus.ttf") format("truetype"); /* Ajustez le chemin d'accès selon l'emplacement de votre fichier */
-    font-weight: normal;
+    src: url("/fonts/Morpheus.ttf") format("truetype");
+    font-weight: 500;
     font-style: normal;
 }
