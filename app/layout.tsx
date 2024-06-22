@@ -5,6 +5,16 @@ import { ThemeProvider } from "next-themes";
 // import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 
+const morpheus = localFont({
+    src: [
+        {
+            path: "../public/fonts/Morpheus.ttf",
+            weight: "500",
+            style: "normal",
+        },
+    ],
+    variable: "--font-morpheus",
+});
 
 export const metadata: Metadata = {
     title: "AishUI World of warcraft",
@@ -23,7 +33,7 @@ export default function RootLayout({
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <meta charSet="utf-8" />
                 </head>
-                <body className={GeistSans.className}>
+                <body className={`${GeistSans.className} ${morpheus.variable}`}>
                     <ThemeProvider
                         attribute="class"
                         defaultTheme="dark"
