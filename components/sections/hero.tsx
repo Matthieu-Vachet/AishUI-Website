@@ -19,7 +19,7 @@ const Hero = () => {
                 <div className="absolute bottom-0 left-0 right-0 h-56 bg-gradient-to-t from-black-100 to-transparent z-50"></div>
             </div>
             <div className="flex flex-col justify-center items-center text-center gap-7 md:gap-10 w-full px-4">
-                <button className="flex items-center gap-2 border rounded-full border-gold-100/50 py-2 px-4 shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_0px_0px_30px_0px_rgba(188,144,77,0.5)]">
+                <button className="flex items-center gap-2 border rounded-full border-gold-100/50 py-1 px-2 shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_0px_0px_30px_0px_rgba(188,144,77,0.5)]">
                     <Image
                         src="/logo/aish_ui_2.webp"
                         alt="Logo AishUI"
@@ -58,7 +58,7 @@ const Hero = () => {
                 </div>
                 <div className="flex flex-col items-center gap-6">
                     <p className=" text-lg md:text-xl text-gray-100">Compatible</p>
-                    <div className="flex items-center justify-center gap-5">
+                    <div className="flex items-center justify-center gap-3 md:gap-5">
                         <Image
                             src="/image/wow-cataclysme.webp"
                             alt="Logo AishUI"
@@ -73,7 +73,7 @@ const Hero = () => {
                             width={136}
                             height={60}
                             priority
-                            className=" w-44 md:w-[18rem] lg:w-[21rem]"
+                            className=" w-40 md:w-[18rem] lg:w-[21rem]"
                         />
                     </div>
                 </div>

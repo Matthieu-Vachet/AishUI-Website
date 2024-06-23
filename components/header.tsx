@@ -34,8 +34,8 @@ export const Header = () => {
     };
 
     return (
-        <header className="fixed top-0 left-0 z-50 w-full border-b border-transparent backdrop-blur-[12px] p-4 rounded-b-3xl bg-white/5">
-            <div className="flex justify-between items-center ">
+        <header className="fixed top-0 left-0 z-50 w-full border-b border-transparent backdrop-blur-[12px] p-3 rounded-b-3xl bg-white/5 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
+            <div className="flex justify-between items-center mx-4 ">
                 <Link className="flex items-center text-md gap-3" href="/">
                     <Image
                         src="/logo/aish_ui_2.webp"
@@ -43,9 +43,11 @@ export const Header = () => {
                         width={40}
                         height={36}
                         priority
-                        className="w-8 h-8 md:w-10 md:h-10"
+                        className="w-10 h-10"
                     />
-                    <p className="hidden md:flex">AishUI</p>
+                    <p className="flex text-2xl border-t-2 border-b-2 border-gold-100/50">
+                        Aish <span className="text-gold-100">UI</span>
+                    </p>
                 </Link>
 
                 <div
