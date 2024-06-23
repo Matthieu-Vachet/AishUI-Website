@@ -20,7 +20,7 @@ const Retails = () => {
                 </Features>
             </div>
             <div className="text-center">
-                <h2 className="-mt-28 md:-mt-60 mb-4 text-4xl md:mb-7 lg:text-5xl">
+                <h2 className="-mt-28 md:-mt-60 mb-4 text-3xl md:mb-7 lg:text-5xl text-gradient">
                     Des fonctionnalités en constent évolution
                 </h2>
             </div>
