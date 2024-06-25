@@ -84,8 +84,8 @@ export const Header = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#retailUi" onClick={handleLinkClick}>
-                                    Retail UI
+                                <Link href="#aishui" onClick={handleLinkClick}>
+                                    Aish UI
                                 </Link>
                             </li>
                         </ul>

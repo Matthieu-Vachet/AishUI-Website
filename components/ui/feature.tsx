@@ -58,10 +58,10 @@ const MainFeature = ({ text, title, imageSize = "small" }: MainFeatureProps) => 
                 </Container>
             </div>
             <Container className="w-[78rem] max-w-[90%] text-center">
-                <h2 className="mx-auto my-16 text-2xl leading-tight text-white md:w-[80%] md:text-4xl">
+                <h2 className="mx-auto mb-[2rem] md:mb-[5rem] my-16 text-xl leading-tight text-white md:w-[80%] md:text-4xl">
                     {text}
                 </h2>
-                <hr className="mb-[7.2rem] h-[1px] border-none bg-[linear-gradient(to_right,transparent,rgba(255,255,255,0.2)_50%,transparent)]" />
+                <hr className="mb-[5rem] md:mb-[7.2rem] h-[1px] border-none bg-[linear-gradient(to_right,transparent,rgba(255,255,255,0.2)_50%,transparent)]" />
             </Container>
         </>
     );

@@ -7,7 +7,7 @@ function GridFeature() {
     return (
         <div className="mx-auto h-[28rem] overflow-hidden md:h-auto md:overflow-auto z-50 lg:max-w-[85vw]">
             <div className="flex snap-x snap-mandatory gap-6 overflow-x-auto px-8 pb-12 md:flex-wrap md:overflow-hidden">
-                <div className="relative flex min-h-[20rem] w-full shrink-0 snap-center flex-col items-center justify-center md:justify-end overflow-hidden rounded-[3rem] border border-white/30 bg-glass-gradient p-8 text-center md:max-w-[calc(66.66%-12px)] md:basis-[calc(66.66%-12px)] md:p-4">
+                <div className="relative flex min-h-[20rem] w-full shrink-0 snap-center flex-col items-center justify-center md:justify-end overflow-hidden rounded-2xl border border-white/30 bg-glass-gradient p-8 text-center md:max-w-[calc(66.66%-12px)] md:basis-[calc(66.66%-12px)] md:p-4">
                     <div className="absolute inset-0 z-0 sepia opacity-20 hover:sepia-0 transition-sepia duration-300 ease-in-out">
                         <Image
                             src="/image/reshade-grid.png"
@@ -28,7 +28,7 @@ function GridFeature() {
                         World of Warcraft
                     </p>
                 </div>
-                <div className="relative flex min-h-[20rem] w-full shrink-0 snap-center flex-col items-center justify-center overflow-hidden rounded-[3rem] border border-white/30 bg-glass-gradient p-20 text-center md:basis-[calc(33.33%-12px)] md:p-4 gap-16">
+                <div className="relative flex min-h-[20rem] w-full shrink-0 snap-center flex-col items-center justify-center overflow-hidden rounded-2xl border border-white/30 bg-glass-gradient p-20 text-center md:basis-[calc(33.33%-12px)] md:p-4 gap-16">
                     <div className="mask-linear-faded absolute top-[-9.2rem]"></div>
                     <div className="absolute inset-0 z-0 blur-sm opacity-20 hover:blur-0 transition-blur duration-300 ease-in-out">
                         <Image
@@ -45,7 +45,7 @@ function GridFeature() {
                         </p>
                     </div>
                 </div>
-                <div className="group relative flex min-h-[20rem] w-full shrink-0 snap-center flex-col items-center justify-center overflow-hidden rounded-[3rem] border border-white/30 bg-glass-gradient p-8 text-center md:basis-[calc(33.33%-12px)] md:p-4 gap-10">
+                <div className="group relative flex min-h-[20rem] w-full shrink-0 snap-center flex-col items-center justify-center overflow-hidden rounded-2xl border border-white/30 bg-glass-gradient p-8 text-center md:basis-[calc(33.33%-12px)] md:p-4 gap-10">
                     <div className="pointer-events-none absolute top-[-8rem] w-[130%]"></div>
                     <div className="text-gold-100 font-semibold z-10">
                         <p className="mb-4 text-4xl lg:text-5xl">Les Meilleurs Addons</p>
@@ -54,7 +54,7 @@ function GridFeature() {
                         </p>
                     </div>
                     <WordRotate
-                        className="text-4xl md:text-3xl lg:text-6xl font-semibold  text-white/50 hover:text-white transition-colors duration-300 ease-in-out z-10"
+                        className="text-4xl md:text-3xl lg:text-5xl font-semibold  text-white/50 hover:text-white transition-colors duration-300 ease-in-out z-10"
                         words={[
                             "ElvUI",
                             "Dynamic Cam",
@@ -67,7 +67,7 @@ function GridFeature() {
                         ]}
                     />
                 </div>
-                <div className="relative flex justify-center min-h-[20rem] w-full shrink-0 snap-center flex-col items-center overflow-hidden rounded-[3rem] border border-white/30 p-8 text-center md:max-w-[calc(66.66%-12px)] md:basis-[calc(66.66%-12px)] md:p-4">
+                <div className="relative flex justify-center min-h-[20rem] w-full shrink-0 snap-center flex-col items-center overflow-hidden rounded-2xl border border-white/30 p-8 text-center md:max-w-[calc(66.66%-12px)] md:basis-[calc(66.66%-12px)] md:p-4">
                     {/* Image de fond avec positionnement absolu */}
                     <div className="absolute inset-0 z-0 sepia opacity-30 hover:sepia-0 transition-sepia duration-300 ease-in-out">
                         <Image
