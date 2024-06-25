@@ -6,6 +6,7 @@ import Image from "next/image";
 import classNames from "classnames";
 
 import { HamburgerIcon } from "@/components/icons/Hamburger";
+import { ModeToggle } from "@/components/themeToggle";
 
 import { IoChevronBackCircleOutline } from "react-icons/io5";
 
@@ -91,6 +92,7 @@ export const Header = () => {
                     </nav>
                 </div>
                 <div className="relative hidden md:flex md:justify-center md:items-center md:text-center md:gap-3 z-10 opacity-50">
+                    <ModeToggle />
                     <Link href="https://ko-fi.com/aishuutv?action=gallery" passHref legacyBehavior>
                         <a target="_blank" rel="noopener noreferrer">
                             <Image

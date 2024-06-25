@@ -4,11 +4,12 @@ import React from "react";
 import Image from "next/image";
 import ShimmerButton from "@/components/shimmer-button";
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
+import TopToScroll from "../topToScroll";
 
 const Hero = () => {
     return (
         <section id="home" className="w-full relative flex justify-center pt-32">
-            <div className="absolute top-0 left-0 right-0 bottom-0 opacity-10">
+            <div className="absolute top-0 left-0 right-0 bottom-0 opacity-20">
                 <Image
                     src="/background/bg-wow.webp"
                     alt="Hero Image"
@@ -35,19 +36,21 @@ const Hero = () => {
                         </span>
                     </p>
                 </button>
-                <div className="text-2xl md:text-5xl lg:text-8xl flex items-center flex-col  md:gap-5 lg:gap-10 font-Morpheus">
-                    <h1 className="text-gray-200 ">
+                <div className="text-3xl md:text-5xl lg:text-8xl flex items-center flex-col  md:gap-5 lg:gap-10 font-Morpheus">
+                    <h1 className="text-gray-200 dark:text-gray-200 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:100ms] ">
                         Explorer le monde <span className="text-gold-100">d&apos;Azeroth</span>
                     </h1>
-                    <h2 className="text-white">avec l&apos;interface parfaite</h2>
+                    <h2 className="text-gray-100 dark:text-white translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
+                        avec l&apos;interface parfaite
+                    </h2>
                 </div>
-                <div className="w-[20rem] md:w-[40rem] relative">
+                <div className="w-[20rem] md:w-[40rem] relative translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:300ms]">
                     <div className="absolute inset-x-10 top-0 bg-gradient-to-r from-transparent via-gold-100 to-transparent h-[2px] w-[3/4] blur-sm md:inset-x-20 md:w-[3/4]" />
                     <div className="absolute inset-x-10 top-0 bg-gradient-to-r from-transparent via-gold-100 to-transparent h-px w-3/4 md:inset-x-20 md:w-3/4" />
                     <div className="absolute inset-x-[calc(50%-25%)] top-0 bg-gradient-to-r from-transparent via-gold-100 to-transparent h-[5px] w-1/2 blur-sm md:inset-x-60 md:w-1/4" />
                     <div className="absolute inset-x-[calc(50%-25%)] top-0 bg-gradient-to-r from-transparent via-gold-100 to-transparent h-px w-1/2 md:inset-x-60 md:w-1/4" />
                 </div>
-                <div className="flex flex-col text-center text-gray-200 ">
+                <div className="flex flex-col text-center text-gray-200 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
                     <p className="text-md md:text-[20px]">
                         Profitez d&apos;une expérience de jeu avec une interface complète et non
                         intrusive,
@@ -57,7 +60,9 @@ const Hero = () => {
                     </p>
                 </div>
                 <div className="flex flex-col items-center gap-6">
-                    <p className=" text-lg md:text-xl text-gray-100">Compatible</p>
+                    <p className=" text-lg md:text-xl text-gray-100 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:500ms]">
+                        Compatible
+                    </p>
                     <div className="flex items-center justify-center gap-3 md:gap-5">
                         <Image
                             src="/image/wow-cataclysme.webp"
@@ -65,7 +70,7 @@ const Hero = () => {
                             width={160}
                             height={68}
                             priority
-                            className=" w-44 md:w-[20rem] lg:w-[25rem]"
+                            className=" w-44 md:w-[20rem] lg:w-[25rem] animate-slide-in-left opacity-0 [--animation-delay:900ms]"
                         />
                         <Image
                             src="/image/wow-dragonflight.webp"
@@ -73,7 +78,7 @@ const Hero = () => {
                             width={136}
                             height={60}
                             priority
-                            className=" w-40 md:w-[18rem] lg:w-[21rem]"
+                            className=" w-40 md:w-[18rem] lg:w-[21rem] animate-slide-in-right opacity-0 [--animation-delay:900ms]"
                         />
                     </div>
                 </div>
@@ -95,6 +100,7 @@ const Hero = () => {
                     </ContainerScroll>
                 </div>
             </div>
+            <TopToScroll />
         </section>
     );
 };

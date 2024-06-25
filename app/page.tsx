@@ -1,6 +1,6 @@
 import { Header } from "@/components/header";
 import Hero from "@/components/sections/hero";
-import Retails from "@/components/sections/retails";
+import Retails from "@/components/sections/retailsUi";
 
 export default function Home() {
     return (
