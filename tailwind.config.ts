@@ -43,6 +43,7 @@ const config: Config = {
                     "slide-in-right 1000ms var(--animation-delay, 0ms) ease-out forwards",
                 "slide-in-left":
                     "slide-in-left 1000ms var(--animation-delay, 0ms) ease-out forwards",
+                "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
             },
             keyframes: {
                 "fade-in": {
@@ -74,6 +75,11 @@ const config: Config = {
                 slide: {
                     to: {
                         transform: "translate(calc(100cqw - 100%), 0)",
+                    },
+                },
+                "border-beam": {
+                    "100%": {
+                        "offset-distance": "100%",
                     },
                 },
             },

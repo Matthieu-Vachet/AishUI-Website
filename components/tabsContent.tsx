@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Tabs } from "../components/ui/tabs";
+import { BorderBeam } from "../components/ui/borderBeam";
 
 export function TabsContent() {
     const tabs = [
@@ -11,7 +12,7 @@ export function TabsContent() {
             image: "/image/elvui-Screen.jpg",
             content: (
                 <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 bg-gradient-to-br from-black-100 to-brown-100 border border-white/30">
-                    <div className="flex flex-col items-center gap-5">
+                    <div className="flex flex-col items-center gap-1 md:gap-5">
                         <p className="font-Morpheus text-3xl md:text-5xl font-bold text-gold-100">
                             ElvUI
                         </p>
@@ -27,7 +28,7 @@ export function TabsContent() {
                             <span className="text-gold-100">/moveui</span>
                         </p>
                     </div>
-                    <div className="border-2 absolute border-gold-100/80 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
+                    <div className="border absolute border-gold-100/10 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
                         <Image
                             src="/image/elvui-Screen.jpg"
                             alt="dummy image"
@@ -35,6 +36,7 @@ export function TabsContent() {
                             height="1000"
                             className="w-full object-cover opacity-70 hover:opacity-100 transition-opacity duration-200 object-left-top rounded-2xl "
                         />
+                        <BorderBeam size={250} duration={12} delay={9} />
                     </div>
                 </div>
             ),
@@ -58,7 +60,7 @@ export function TabsContent() {
                             Commande en jeu: <span className="text-gold-100">/wa</span>
                         </p>
                     </div>
-                    <div className="border-2 absolute border-gold-100/80 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
+                    <div className="border absolute border-gold-100/10 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
                         <Image
                             src="/image/weekAura-Screen.jpg"
                             alt="dummy image"
@@ -66,6 +68,7 @@ export function TabsContent() {
                             height="1000"
                             className="w-full object-cover opacity-70 hover:opacity-100 transition-opacity duration-200 object-left-top rounded-2xl "
                         />
+                        <BorderBeam size={250} duration={12} delay={9} />
                     </div>
                 </div>
             ),
@@ -89,7 +92,7 @@ export function TabsContent() {
                             Commande en jeu: <span className="text-gold-100">/dc</span>
                         </p>
                     </div>
-                    <div className="border-2 absolute border-gold-100/80 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
+                    <div className="border absolute border-gold-100/10 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
                         <Image
                             src="/image/dynamicCam-Screen.jpg"
                             alt="dummy image"
@@ -97,6 +100,7 @@ export function TabsContent() {
                             height="1000"
                             className="w-full object-cover opacity-70 hover:opacity-100 transition-opacity duration-200 object-left-top rounded-2xl "
                         />
+                        <BorderBeam size={250} duration={12} delay={9} />
                     </div>
                 </div>
             ),
@@ -120,7 +124,7 @@ export function TabsContent() {
                             Commande en jeu: <span className="text-gold-100">/bw</span>
                         </p>
                     </div>
-                    <div className="border-2 absolute border-gold-100/80 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
+                    <div className="border absolute border-gold-100/10 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
                         <Image
                             src="/image/bigwig-Screen.jpg"
                             alt="dummy image"
@@ -128,6 +132,7 @@ export function TabsContent() {
                             height="1000"
                             className="w-full object-cover opacity-70 hover:opacity-100 transition-opacity duration-200 object-left-top rounded-2xl "
                         />
+                        <BorderBeam size={250} duration={12} delay={9} />
                     </div>
                 </div>
             ),
@@ -153,7 +158,7 @@ export function TabsContent() {
                             Commande en jeu: <span className="text-gold-100">/details options</span>
                         </p>
                     </div>
-                    <div className="border-2 absolute border-gold-100/80 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
+                    <div className="border absolute border-gold-100/10 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
                         <Image
                             src="/image/details-Screen.jpg"
                             alt="dummy image"
@@ -161,6 +166,7 @@ export function TabsContent() {
                             height="1000"
                             className="w-full object-cover opacity-70 hover:opacity-100 transition-opacity duration-200 object-left-top rounded-2xl "
                         />
+                        <BorderBeam size={250} duration={12} delay={9} />
                     </div>
                 </div>
             ),
@@ -183,7 +189,7 @@ export function TabsContent() {
                             Commande en jeu: <span className="text-gold-100">/raven</span>
                         </p>
                     </div>
-                    <div className="border-2 absolute border-gold-100/80 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
+                    <div className="border absolute border-gold-100/10 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
                         <Image
                             src="/image/raven-Screen.jpg"
                             alt="dummy image"
@@ -191,6 +197,7 @@ export function TabsContent() {
                             height="1000"
                             className="w-full object-cover opacity-70 hover:opacity-100 transition-opacity duration-200 object-left-top rounded-2xl "
                         />
+                        <BorderBeam size={250} duration={12} delay={9} />
                     </div>
                 </div>
             ),
@@ -218,7 +225,7 @@ export function TabsContent() {
                             <span className="text-gold-100">/gil gui</span>
                         </p>
                     </div>
-                    <div className="border-2 absolute border-gold-100/80 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
+                    <div className="border absolute border-gold-100/10 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
                         <Image
                             src="/image/tchat-Screen.jpg"
                             alt="dummy image"
@@ -226,6 +233,7 @@ export function TabsContent() {
                             height="1000"
                             className="w-full object-cover opacity-70 hover:opacity-100 transition-opacity duration-200 object-left-top rounded-2xl "
                         />
+                        <BorderBeam size={250} duration={12} delay={9} />
                     </div>
                 </div>
             ),
@@ -233,7 +241,7 @@ export function TabsContent() {
     ];
 
     return (
-        <div className="h-[35rem] md:h-[50rem] [perspective:1000px] relative b flex flex-col lg:max-w-[85vw] mx-auto w-full  items-start justify-start my-20">
+        <div className="h-[35rem] md:h-[54rem] lg:h-[60rem] [perspective:1000px] relative b flex flex-col  max-w-[90vw] lg:max-w-[85vw] mx-auto w-full  items-start justify-start my-10 md:my-20 pb-12">
             <Tabs tabs={tabs} />
         </div>
     );
