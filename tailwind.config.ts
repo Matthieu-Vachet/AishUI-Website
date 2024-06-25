@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette");
 
 const config: Config = {
     darkMode: ["class"],
@@ -10,7 +11,7 @@ const config: Config = {
     theme: {
         extend: {
             fontFamily: {
-                Morpheus: "var(--font-morpheus)", // Utilisez un nom de votre choix pour la police
+                Morpheus: "var(--font-morpheus)",
             },
             colors: {
                 black: {
@@ -22,6 +23,9 @@ const config: Config = {
                 },
                 gold: {
                     100: "#BC994D",
+                },
+                brown: {
+                    100: "#4D3B1E",
                 },
             },
             backgroundImage: {
@@ -75,6 +79,18 @@ const config: Config = {
             },
         },
     },
-    plugins: [],
+    plugins: [addVariablesForColors],
 };
+
+function addVariablesForColors({ addBase, theme }: any) {
+    let allColors = flattenColorPalette(theme("colors"));
+    let newVars = Object.fromEntries(
+        Object.entries(allColors).map(([key, val]) => [`--${key}`, val]),
+    );
+
+    addBase({
+        ":root": newVars,
+    });
+}
+
 export default config;

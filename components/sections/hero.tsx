@@ -9,7 +9,7 @@ import TopToScroll from "../topToScroll";
 const Hero = () => {
     return (
         <section id="home" className="w-full relative flex justify-center pt-32">
-            <div className="absolute top-0 left-0 right-0 bottom-0 opacity-10">
+            <div className="absolute top-0 left-0 right-0 bottom-0 opacity-20">
                 <Image
                     src="/background/bg-wow.webp"
                     alt="Hero Image"
@@ -36,11 +36,11 @@ const Hero = () => {
                         </span>
                     </p>
                 </button>
-                <div className="text-2xl md:text-5xl lg:text-8xl flex items-center flex-col  md:gap-5 lg:gap-10 font-Morpheus">
-                    <h1 className="text-gray-200 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:100ms] ">
+                <div className="text-3xl md:text-5xl lg:text-8xl flex items-center flex-col  md:gap-5 lg:gap-10 font-Morpheus">
+                    <h1 className="text-gray-200 dark:text-gray-200 translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:100ms] ">
                         Explorer le monde <span className="text-gold-100">d&apos;Azeroth</span>
                     </h1>
-                    <h2 className="text-white translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
+                    <h2 className="text-gray-100 dark:text-white translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
                         avec l&apos;interface parfaite
                     </h2>
                 </div>
