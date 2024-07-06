@@ -3,7 +3,7 @@
 import React from "react";
 import classNames from "classnames";
 import { useInView } from "react-intersection-observer";
-import { Container } from "@/components/ui/Container";
+import { Container } from "@/components/ui/container";
 
 type FeaturesProps = {
     children: React.ReactNode;
