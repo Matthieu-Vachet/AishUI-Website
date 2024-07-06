@@ -1,6 +1,6 @@
 import { Header } from "@/components/header";
 import Hero from "@/components/sections/hero";
-import Retails from "@/components/sections/retailsUi";
+import Fonctionnalités from "@/components/sections/fonctionnalites";
 
 export default function Home() {
     return (
@@ -8,7 +8,7 @@ export default function Home() {
             <div className=" w-full h-full">
                 <Header />
                 <Hero />
-                <Retails />
+                <Fonctionnalités />
             </div>
         </main>
     );

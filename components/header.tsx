@@ -84,8 +84,18 @@ export const Header = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#aishui" onClick={handleLinkClick}>
-                                    Aish UI
+                                <Link href="#fonctionnalités" onClick={handleLinkClick}>
+                                    Features
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#addons" onClick={handleLinkClick}>
+                                    Addons
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#weekauras" onClick={handleLinkClick}>
+                                    WeekAuras
                                 </Link>
                             </li>
                         </ul>
