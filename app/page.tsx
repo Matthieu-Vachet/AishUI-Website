@@ -1,6 +1,6 @@
-import { Header } from "@/components/sections/header";
-import Hero from "@/components/sections/hero";
-import Fonctionnalités from "@/components/sections/features";
+import { Header } from "@/components/sections/Header";
+import Hero from "@/components/sections/Hero";
+import Fonctionnalités from "@/components/sections/Features";
 
 export default function Home() {
     return (
