@@ -6,6 +6,7 @@ import Addons from "@/components/addons";
 import AnimatedElement from "@/components/ui/animatedElements";
 import WeekAura from "@/components/weekAuras";
 import Particles from "@/components/ui/particles";
+import Reshade from "@/components/reshade";
 
 const fonctionnalités = () => {
     return (
@@ -45,6 +46,7 @@ const fonctionnalités = () => {
                     refresh
                     className="absolute inset-0 -z-20"
                 />
+                <Reshade />
             </div>
         </section>
     );
