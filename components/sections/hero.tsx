@@ -2,9 +2,9 @@
 
 import React from "react";
 import Image from "next/image";
-import ShimmerButton from "@/components/Shimer-Bouton";
-import { ContainerScroll } from "@/components/ui/Container-Scroll-Animation";
-import TopToScroll from "@/components/Top-To-Scroll";
+import ShimmerButton from "@/components/shimerBouton";
+import { ContainerScroll } from "@/components/ui/containerScrollAnimation";
+import TopToScroll from "@/components/topToScroll";
 
 const Hero = () => {
     return (

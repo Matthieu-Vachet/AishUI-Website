@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
-import { Features } from "@/components/ui/Features";
-import GridFeature from "@/components/Grid-Feature";
-import Addons from "@/components/Addons";
-import AnimatedElement from "@/components/ui/Animated-Elements";
-import WeekAura from "@/components/WeekAuras";
+import { Features } from "@/components/ui/features";
+import GridFeature from "@/components/gridFeature";
+import Addons from "@/components/addons";
+import AnimatedElement from "@/components/ui/animatedElements";
+import WeekAura from "@/components/weekAuras";
 
 const fonctionnalités = () => {
     return (
