@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Tabs } from "@/components/ui/tabs";
+import { Tabs } from "@/components/ui/Tabs";
 import { BorderBeam } from "@/components/ui/Border-Beam";
 
 export function TabsContent() {
