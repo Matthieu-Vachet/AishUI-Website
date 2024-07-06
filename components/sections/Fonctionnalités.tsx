@@ -3,7 +3,7 @@ import React from "react";
 import { Features } from "@/components/ui/Features";
 import GridFeature from "@/components/Grid-Feature";
 import Addons from "@/components/Addons";
-import AnimatedElement from "../ui/Animated-Elements";
+import AnimatedElement from "@/components/ui/Animated-Elements";
 import WeekAura from "@/components/WeekAuras";
 
 const fonctionnalités = () => {
