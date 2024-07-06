@@ -1,6 +1,6 @@
 import { Header } from "@/components/header";
 import Hero from "@/components/sections/hero";
-import Fonctionnalités from "@/components/sections/features";
+import Fonctionnalités from "@/components/sections/fonctionnalites";
 
 export default function Home() {
     return (
