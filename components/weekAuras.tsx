@@ -25,17 +25,20 @@ const imagesData = [
 function WeekAura() {
     return (
         <div id="weekauras">
-            <div className="text-center uppercase">
+            <div className="text-center uppercase ">
                 <AnimatedElement delay={0.4} duration={0.5}>
                     <h2 className="mt-36 md:mt-48 text-2xl lg:text-5xl text-gradient">
                         Un WeakAuras sur <span className="font-bold text-gold-100">mesure</span>
                     </h2>
                 </AnimatedElement>
             </div>
+            <div className="max-w-[95vw] lg:max-w-[85vw] mx-auto mt-10 md:mt-14">
+                <div className="relative grid grid-cols-1 gap-0 md:gap-5 md:grid-cols-2 mb-10 p-3 md:p-5">
+                    {/* Élément de fond avec flou */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-black-100/20 to-brown-100/50 rounded-2xl backdrop-blur-sm border border-gold-100/10"></div>
 
-            <div className="max-w-[95vw] lg:max-w-[70vw] mx-auto mt-10 md:mt-14">
-                <div className="grid grid-cols-1 gap-0 md:gap-5 md:grid-cols-2 mb-10 border border-gold-100/10 rounded-2xl bg-gradient-to-br from-black-100/20 to-brown-100/20 p-3 md:p-5">
-                    <div className=" flex flex-wrap justify-center items-center ">
+                    {/* Contenu */}
+                    <div className="flex flex-wrap justify-center items-center z-10">
                         <BoxReveal boxColor={"#4D3B1E"} duration={0.5}>
                             <div className="flex flex-col justify-center items-center text-center">
                                 <p className="gap-2 mb-[1rem] text-xl lg:text-4xl text-gradient uppercase font-semibold">
@@ -47,24 +50,22 @@ function WeekAura() {
                             </div>
                         </BoxReveal>
                     </div>
-                    <div>
+                    <div className="z-10">
                         <div className="flex flex-wrap justify-center items-center p-5">
                             {/* Mapper sur le tableau de données pour afficher les images */}
                             {imagesData.map((image, index) => (
                                 <div key={index}>
-                                    <img
-                                        src={image.src}
-                                        alt={image.alt}
-                                        className=" w-16 md:w-32"
-                                    />
+                                    <img src={image.src} alt={image.alt} className="w-16 md:w-32" />
                                 </div>
                             ))}
                         </div>
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 gap-0 md:gap-5 md:grid-cols-2 mb-10 border border-gold-100/10 rounded-2xl bg-gradient-to-br from-black-100/20 to-brown-100/20 p-3 md:p-5">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 p-5 order-1 md:order-none">
+                <div className="relative grid grid-cols-1 gap-0 md:gap-5 md:grid-cols-2 mb-10 p-3 md:p-5">
+                    <div className="absolute inset-0 bg-gradient-to-br from-black-100/20 to-brown-100/50 rounded-2xl backdrop-blur-sm border border-gold-100/10"></div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 p-5 order-1 md:order-none z-10">
                         <Image
                             src="/gif/Rotation-1.gif"
                             alt="Rotation WeakAura"
@@ -80,7 +81,7 @@ function WeekAura() {
                             className="border rounded-xl border-gold-100/50"
                         />
                     </div>
-                    <div className="flex flex-wrap justify-center items-center text-center p-5 order-none md:order-none">
+                    <div className="flex flex-wrap justify-center items-center text-center p-5 order-none md:order-none z-10">
                         <BoxReveal boxColor={"#4D3B1E"} duration={0.5}>
                             <div className="flex flex-col justify-center items-center">
                                 <p className=" gap-2 mb-[1rem] text-xl lg:text-4xl text-gradient uppercase font-semibold">
@@ -94,8 +95,10 @@ function WeekAura() {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 gap-0 md:gap-5 md:grid-cols-2 mb-10 border border-gold-100/10 rounded-2xl bg-gradient-to-br from-black-100/20 to-brown-100/20 p-3 md:p-5">
-                    <div className=" flex flex-wrap justify-center items-center p-5">
+                <div className="relative grid grid-cols-1 gap-0 md:gap-5 md:grid-cols-2 mb-10 p-3 md:p-5">
+                    <div className="absolute inset-0 bg-gradient-to-br from-black-100/20 to-brown-100/50 rounded-2xl backdrop-blur-sm border border-gold-100/10"></div>
+
+                    <div className=" flex flex-wrap justify-center items-center p-5 z-10">
                         <BoxReveal boxColor={"#4D3B1E"} duration={0.5}>
                             <div className="flex flex-col justify-center items-center">
                                 <p className=" gap-2 mb-[1rem] text-xl lg:text-4xl text-gradient uppercase font-semibold">
@@ -107,7 +110,7 @@ function WeekAura() {
                             </div>
                         </BoxReveal>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 p-5">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 p-5 z-10">
                         <Image
                             src="/gif/Rotation-3.gif"
                             alt="Rotation WeakAura"
@@ -125,8 +128,10 @@ function WeekAura() {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 gap-0 md:gap-5 md:grid-cols-2 mb-10 border border-gold-100/10 rounded-2xl bg-gradient-to-br from-black-100/20 to-brown-100/20 p-3 md:p-5">
-                    <div className="flex justify-center items-center p-5 order-1 md:order-none">
+                <div className="relative grid grid-cols-1 gap-0 md:gap-5 md:grid-cols-2 mb-10 p-3 md:p-5">
+                    <div className="absolute inset-0 bg-gradient-to-br from-black-100/20 to-brown-100/50 rounded-2xl backdrop-blur-sm border border-gold-100/10"></div>
+
+                    <div className="flex justify-center items-center p-5 order-1 md:order-none z-10">
                         <Image
                             src="/gif/Dragonriding.gif"
                             alt="Dragonriding WeakAura"
@@ -135,7 +140,7 @@ function WeekAura() {
                             className="border rounded-xl border-gold-100/50"
                         />
                     </div>
-                    <div className="flex flex-wrap justify-center items-center p-5 order-none md:order-none">
+                    <div className="flex flex-wrap justify-center items-center p-5 order-none md:order-none z-10">
                         <BoxReveal boxColor={"#4D3B1E"} duration={0.5}>
                             <div className="flex flex-col justify-center items-center text-center">
                                 <p className=" gap-2 mb-[1rem] text-xl lg:text-4xl text-gradient uppercase font-semibold">
