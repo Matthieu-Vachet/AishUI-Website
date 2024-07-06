@@ -27,9 +27,9 @@ const fonctionnalités = () => {
                 </Features>
             </div>
 
-            <div className="text-center uppercase ">
+            <div className="text-center max-w-[90vw] lg:max-w-[85vw] mx-auto ">
                 <AnimatedElement delay={0.4} duration={0.5}>
-                    <h2 className="-mt-28 md:-mt-56 mb-4 text-2xl md:mb-20 lg:text-5xl text-gradient translate-y-[-1rem] animate-fade-in opacity-0">
+                    <h2 className=" font-Morpheus -mt-28 md:-mt-56 mb-5 text-3xl md:text-5xl md:mb-20 lg:text-7xl text-gradient translate-y-[-1rem] animate-fade-in opacity-0">
                         Des fonctionnalités en constent évolution
                     </h2>
                 </AnimatedElement>
@@ -40,7 +40,7 @@ const fonctionnalités = () => {
                 <WeekAura />
                 <Particles
                     quantity={500}
-                    ease={10}
+                    ease={80}
                     color={"#ffffff"}
                     refresh
                     className="absolute inset-0 -z-20"
