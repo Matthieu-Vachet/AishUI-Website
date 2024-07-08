@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { VelocityScroll } from "@/components/marquee";
+import { VelocityScroll } from "@/components/ui/marquee";
 import WordRotate from "@/components/ui/wordRotate";
 
 function GridFeature() {

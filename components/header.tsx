@@ -6,9 +6,12 @@ import Image from "next/image";
 import classNames from "classnames";
 
 import { HamburgerIcon } from "@/components/icons/Hamburger";
-import { ModeToggle } from "@/components/themeToggle";
-
 import { IoChevronBackCircleOutline } from "react-icons/io5";
+
+import { ModeToggle } from "@/components/ui/themeToggle";
+
+import { HeroDatas } from "@/data/heroDatas";
+import { SocialDatas, SocialDatasTypes } from "@/data/socialDatas";
 
 export const Header = () => {
     const [hamburgerMenuIsOpen, setHamburgerMenuIsOpen] = useState(false);
@@ -39,8 +42,8 @@ export const Header = () => {
             <div className="flex justify-between items-center mx-4 ">
                 <Link className="flex items-center text-md gap-3" href="/">
                     <Image
-                        src="/logo/aish_ui_2.webp"
-                        alt="Logo AishUI"
+                        src={HeroDatas.logo.src}
+                        alt={HeroDatas.logo.alt}
                         width={40}
                         height={36}
                         priority
@@ -103,7 +106,21 @@ export const Header = () => {
                 </div>
                 <div className="relative hidden md:flex md:justify-center md:items-center md:text-center md:gap-3 z-10 opacity-50">
                     <ModeToggle />
-                    <Link href="https://ko-fi.com/aishuutv?action=gallery" passHref legacyBehavior>
+                    {SocialDatas.map((social: SocialDatasTypes) => (
+                        <Link key={social.name} href={social.url} passHref legacyBehavior>
+                            <a target="_blank" rel="noopener noreferrer">
+                                <Image
+                                    src={social.image}
+                                    alt={social.alt}
+                                    width={social.width}
+                                    height={social.height}
+                                    priority
+                                    className={social.styles}
+                                />
+                            </a>
+                        </Link>
+                    ))}
+                    {/* <Link href="https://ko-fi.com/aishuutv?action=gallery" passHref legacyBehavior>
                         <a target="_blank" rel="noopener noreferrer">
                             <Image
                                 src="/icons/kofi-color.svg"
@@ -166,7 +183,7 @@ export const Header = () => {
                                 className="w-6 h-6 hover:scale-110 transition-scale duration-300 ease-in-out"
                             />
                         </a>
-                    </Link>
+                    </Link> */}
                 </div>
                 <button
                     className="ml-6 md:hidden"

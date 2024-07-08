@@ -1,5 +1,5 @@
 import React from "react";
-import { TabsContent } from "@/components/tabsContent";
+import { TabsContent } from "@/components/ui/tabsContent";
 import AnimatedElement from "@/components/ui/animatedElements";
 
 function Addons() {

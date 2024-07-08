@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Features } from "@/components/ui/features";
-import GridFeature from "@/components/gridFeature";
+import GridFeature from "@/components/ui/gridFeature";
 import Addons from "@/components/addons";
 import AnimatedElement from "@/components/ui/animatedElements";
 import WeekAura from "@/components/weekAuras";

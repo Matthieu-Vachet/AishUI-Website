@@ -2,17 +2,20 @@
 
 import React from "react";
 import Image from "next/image";
-import ShimmerButton from "@/components/shimerBouton";
+
+import ShimmerButton from "@/components/ui/shimerBouton";
 import { ContainerScroll } from "@/components/ui/containerScrollAnimation";
-import TopToScroll from "@/components/topToScroll";
+import TopToScroll from "@/components/ui/topToScroll";
+
+import { HeroDatas } from "@/data/heroDatas";
 
 const Hero = () => {
     return (
         <section id="home" className="w-full relative flex justify-center pt-32">
             <div className="absolute top-0 left-0 right-0 bottom-0 opacity-20">
                 <Image
-                    src="/background/bg-wow.webp"
-                    alt="Hero Image"
+                    src={HeroDatas.backgroundImage.src}
+                    alt={HeroDatas.backgroundImage.alt}
                     layout="fill"
                     objectFit="cover"
                     quality={100}
@@ -22,17 +25,17 @@ const Hero = () => {
             <div className="flex flex-col justify-center items-center text-center gap-7 md:gap-10 w-full px-4">
                 <button className="flex items-center gap-2 border rounded-full border-gold-100/50 py-1 px-3  shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_0px_0px_30px_0px_rgba(188,144,77,0.5)]">
                     <Image
-                        src="/logo/aish_ui_2.webp"
-                        alt="Logo AishUI"
+                        src={HeroDatas.logo.src}
+                        alt={HeroDatas.logo.alt}
                         width={19}
                         height={23}
                         priority
-                        className="w-8 h-8 md:w-10 md:h-10"
+                        className={HeroDatas.logo.styles}
                     />
                     <p className="text-xs md:text-sm text-gray-100 font-medium ">
                         Dernière Version{" "}
                         <span className=" text-gold-100 font-extrabold text-sm md:text-lg">
-                            V 2.5
+                            {HeroDatas.lastVersion}
                         </span>
                     </p>
                 </button>
@@ -65,37 +68,37 @@ const Hero = () => {
                     </p>
                     <div className="flex items-center justify-center gap-3 md:gap-5">
                         <Image
-                            src="/image/wow-cataclysme.webp"
-                            alt="Logo AishUI"
+                            src={HeroDatas.compatibleGame.src1}
+                            alt={HeroDatas.compatibleGame.alt1}
                             width={160}
                             height={68}
                             priority
-                            className=" w-44 md:w-[20rem] lg:w-[25rem] animate-slide-in-left opacity-0 [--animation-delay:900ms]"
+                            className={HeroDatas.compatibleGame.styles1}
                         />
                         <Image
-                            src="/image/wow-dragonflight.webp"
-                            alt="Logo AishUI"
+                            src={HeroDatas.compatibleGame.src2}
+                            alt={HeroDatas.compatibleGame.alt2}
                             width={136}
                             height={60}
                             priority
-                            className=" w-40 md:w-[18rem] lg:w-[21rem] animate-slide-in-right opacity-0 [--animation-delay:900ms]"
+                            className={HeroDatas.compatibleGame.styles2}
                         />
                     </div>
                 </div>
                 <ShimmerButton className="shadow-xl" background="rgb(188,144,77)">
                     <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight dark:text-black lg:text-lg">
-                        Get Started
+                        Obtenir AishUI
                     </span>
                 </ShimmerButton>
                 <div className="relative hidden md:block md:mt-[-10rem]">
                     <div className="absolute top-64 left-[10%] right-[10%] h-1/2 mx-auto rounded-b-full bg-gradient-to-b from-gold-100/50 via-transparent to-transparent blur-3xl z-0"></div>{" "}
                     <ContainerScroll>
                         <Image
-                            src={`/image/nomanclature.webp`}
-                            alt="hero"
+                            src={HeroDatas.containerScroll.src}
+                            alt={HeroDatas.containerScroll.alt}
                             width={1200}
                             height={758}
-                            className="mx-auto rounded-2xl object-container h-full object-left-top"
+                            className={HeroDatas.containerScroll.styles}
                         />
                     </ContainerScroll>
                 </div>
