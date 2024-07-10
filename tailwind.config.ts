@@ -10,12 +10,16 @@ const config: Config = {
     ],
     theme: {
         extend: {
+            screens: {
+                "3xl": "1800px",
+            },
             fontFamily: {
                 Morpheus: "var(--font-morpheus)",
+                GeistSans: ["GeistSans", "sans-serif"],
             },
             colors: {
                 black: {
-                    100: "#171717",
+                    100: "#010000",
                 },
                 gray: {
                     100: "#646464",
@@ -34,6 +38,8 @@ const config: Config = {
                     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
                 "glass-gradient":
                     "linear-gradient(rgba(0, 0, 0, 0.1) 0%,rgba(188,144,77,0.1) 100%)",
+                "radial-faded":
+                    "radial-gradient(circle at bottom center,var(--color),transparent 100%)",
             },
             animation: {
                 "spin-around": "spin-around calc(var(--speed) * 2) infinite linear",

@@ -39,7 +39,7 @@ export const Header = () => {
 
     return (
         <header className="fixed top-0 left-0 z-50 w-full border-b border-transparent backdrop-blur-[12px] p-3 rounded-b-3xl bg-white/5 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
-            <div className="flex justify-between items-center mx-4 ">
+            <div className="flex justify-between items-center mx-4">
                 <Link className="flex items-center text-md gap-3" href="/">
                     <Image
                         src={HeroDatas.logo.src}
@@ -62,7 +62,7 @@ export const Header = () => {
                 >
                     <nav
                         className={classNames(
-                            "fixed bg-black-100/95 top-0 left-0 h-[100vh] w-[100vw] overflow-auto transition-opacity duration-500 md:relative md:top-0 md:block md:h-auto md:w-auto md:translate-x-0 md:overflow-hidden md:bg-transparent md:opacity-100 md:transition-none",
+                            "fixed bg-black-100/95 top-0 left-0 h-[100vh] w-[100vw] overflow-auto transition-opacity duration-500 md:relative md:top-0 md:flex md:justify-center md:items-center md:h-auto md:w-auto md:translate-x-0 md:overflow-hidden md:bg-transparent md:opacity-100 md:transition-none",
                             hamburgerMenuIsOpen
                                 ? "translate-x-0 opacity-100"
                                 : "translate-x-[-100vw] opacity-0",
@@ -76,18 +76,18 @@ export const Header = () => {
                         </div>
                         <ul
                             className={classNames(
-                                "flex h-full flex-col md:flex-row md:items-center md:[&_li]:border-none text-3xl",
+                                "flex h-full flex-col md:flex-row md:items-center md:justify-center text-3xl",
                                 "ease-in [&_a:hover]:text-purple gap-5 [&_a]:flex [&_a]:w-full [&_a]:translate-y-0  [&_a]:justify-center [&_a]:text-3xl [&_a]:transition-[color,transform] [&_a]:duration-300 md:[&_a]:translate-y-0 md:[&_a]:text-sm lg:[&_a]:text-md xl:[&_a]:text-xl md:hover:[&_a]:text-purple [&_a]:md:transition-colors",
                                 hamburgerMenuIsOpen && "[&_a]:translate-y-0",
                             )}
                         >
                             <li>
-                                <Link href="#Home" onClick={handleLinkClick}>
-                                    Acceuil
+                                <Link href="#home" onClick={handleLinkClick}>
+                                    Accueil
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#fonctionnalités" onClick={handleLinkClick}>
+                                <Link href="#aishui" onClick={handleLinkClick}>
                                     Features
                                 </Link>
                             </li>
@@ -97,94 +97,42 @@ export const Header = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#weekauras" onClick={handleLinkClick}>
-                                    WeekAuras
+                                <Link href="#weakauras" onClick={handleLinkClick}>
+                                    WeakAuras
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#reshade" onClick={handleLinkClick}>
+                                    Reshade
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#pricing" onClick={handleLinkClick}>
+                                    Tarifs
                                 </Link>
                             </li>
                         </ul>
                     </nav>
                 </div>
-                <div className="relative hidden md:flex md:justify-center md:items-center md:text-center md:gap-3 z-10 opacity-50">
+                {/* <div className="relative hidden md:flex md:justify-center md:items-center md:gap-3 z-10">
                     <ModeToggle />
-                    {SocialDatas.map((social: SocialDatasTypes) => (
-                        <Link key={social.name} href={social.url} passHref legacyBehavior>
-                            <a target="_blank" rel="noopener noreferrer">
-                                <Image
-                                    src={social.image}
-                                    alt={social.alt}
-                                    width={social.width}
-                                    height={social.height}
-                                    priority
-                                    className={social.styles}
-                                />
-                            </a>
-                        </Link>
-                    ))}
-                    {/* <Link href="https://ko-fi.com/aishuutv?action=gallery" passHref legacyBehavior>
-                        <a target="_blank" rel="noopener noreferrer">
-                            <Image
-                                src="/icons/kofi-color.svg"
-                                alt="Logo Ko-fi AishUI"
-                                width={30}
-                                height={30}
-                                priority
-                                className="w-7 h-7 hover:scale-110 transition-scale duration-300 ease-in-out"
-                            />
-                        </a>
-                    </Link>
-                    <Link href="https://www.twitch.tv/Aishuu" passHref legacyBehavior>
-                        <a target="_blank" rel="noopener noreferrer">
-                            <Image
-                                src="/icons/twitch-color.svg"
-                                alt="Logo Twitch AishUI"
-                                width={30}
-                                height={30}
-                                priority
-                                className="w-7 h-6 hover:scale-110 transition-scale duration-300 ease-in-out"
-                            />
-                        </a>
-                    </Link>
-                    <Link
-                        href="https://www.youtube.com/channel/UCCmAVfJTJuwnUIuK42tgOtA"
-                        passHref
-                        legacyBehavior
-                    >
-                        <a target="_blank" rel="noopener noreferrer">
-                            <Image
-                                src="/icons/youtube-color.svg"
-                                alt="Logo Youtube AishUI"
-                                width={30}
-                                height={30}
-                                priority
-                                className="w-7 h-7 hover:scale-110 transition-scale duration-300 ease-in-out"
-                            />
-                        </a>
-                    </Link>
-                    <Link href="" passHref legacyBehavior>
-                        <a target="_blank" rel="noopener noreferrer">
-                            <Image
-                                src="/icons/discord-color.svg"
-                                alt="Logo Discord AishUI"
-                                width={30}
-                                height={30}
-                                priority
-                                className="w-7 h-7 hover:scale-110 transition-scale duration-300 ease-in-out"
-                            />
-                        </a>
-                    </Link>
-                    <Link href="https://x.com/Aishuu_TV" passHref legacyBehavior>
-                        <a target="_blank" rel="noopener noreferrer">
-                            <Image
-                                src="/icons/x-color.svg"
-                                alt="Logo Twitter AishUI"
-                                width={30}
-                                height={30}
-                                priority
-                                className="w-6 h-6 hover:scale-110 transition-scale duration-300 ease-in-out"
-                            />
-                        </a>
-                    </Link> */}
-                </div>
+                    <div className="flex justify-center items-center gap-3">
+                        {SocialDatas.map((social: SocialDatasTypes) => (
+                            <Link key={social.name} href={social.url} passHref legacyBehavior>
+                                <a target="_blank" rel="noopener noreferrer">
+                                    <Image
+                                        src={social.image}
+                                        alt={social.alt}
+                                        width={social.width}
+                                        height={social.height}
+                                        priority
+                                        className={social.styles}
+                                    />
+                                </a>
+                            </Link>
+                        ))}
+                    </div>
+                </div> */}
                 <button
                     className="ml-6 md:hidden"
                     onClick={() => setHamburgerMenuIsOpen((open) => !open)}

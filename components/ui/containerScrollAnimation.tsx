@@ -88,7 +88,7 @@ export const Card = ({
                 borderImageSlice: 1,
                 borderImageSource: "linear-gradient(to left, transparent, #bc904d, transparent)",
             }}
-            className="max-w-7xl mx-auto h-[40rem] md:h-[30rem] lg:h-[50rem] w-full p-2 md:p-3 bg-[#222222] rounded-[30px] shadow-2xl"
+            className=" max-w-5xl 3xl:max-w-7xl mx-auto h-[40rem] md:h-[30rem] lg:h-auto w-full p-2 md:p-3 bg-[#222222] rounded-[30px] shadow-2xl"
         >
             <div className="h-full w-full overflow-hidden rounded-2xl bg-gold-100/30 md:rounded-2xl md:p-2 ">
                 {children}

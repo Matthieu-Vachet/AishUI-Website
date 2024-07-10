@@ -10,7 +10,7 @@ function GridFeature() {
                 <div className="relative flex min-h-[20rem] w-full shrink-0 snap-center flex-col items-center justify-center overflow-hidden rounded-2xl border border-white/30 bg-glass-gradient p-8 text-center md:max-w-[calc(66.66%-12px)] md:basis-[calc(66.66%-12px)] md:p-4">
                     <div className="absolute inset-0 z-0 sepia opacity-20 hover:sepia-0 transition-sepia duration-300 ease-in-out">
                         <Image
-                            src="/image/reshade-grid.png"
+                            src="/image/reshade-grid.webp"
                             alt="Image de fond"
                             layout="fill"
                             objectFit="cover"

@@ -36,7 +36,7 @@ export const BeforeAfter = () => {
                 onMouseDown={handleMouseDown}
             >
                 <Image
-                    alt=""
+                    alt="Capture d'écran de World of Warcraft avec Reshade"
                     fill
                     draggable={false}
                     priority
@@ -52,7 +52,7 @@ export const BeforeAfter = () => {
                         fill
                         priority
                         draggable={false}
-                        alt=""
+                        alt="Capture d'écran de World of Warcraft sans Reshade"
                         src="/image/reshade-Before.webp"
                         quality={100}
                     />

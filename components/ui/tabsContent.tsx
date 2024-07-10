@@ -9,7 +9,7 @@ export function TabsContent() {
         {
             title: "Elvui",
             value: "elvui",
-            image: "/image/elvui-Screen.jpg",
+            image: "/image/elvui-Screen.webp",
             content: (
                 <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 bg-gradient-to-br from-black-100 to-brown-100 border border-white/30">
                     <div className="flex flex-col items-center gap-1 md:gap-5">
@@ -30,7 +30,7 @@ export function TabsContent() {
                     </div>
                     <div className="border absolute border-gold-100/10 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
                         <Image
-                            src="/image/elvui-Screen.jpg"
+                            src="/image/elvui-Screen.webp"
                             alt="dummy image"
                             width="1000"
                             height="1000"
@@ -62,7 +62,7 @@ export function TabsContent() {
                     </div>
                     <div className="border absolute border-gold-100/10 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
                         <Image
-                            src="/image/weekAura-Screen.jpg"
+                            src="/image/weekAura-Screen.webp"
                             alt="dummy image"
                             width="1000"
                             height="1000"
@@ -94,7 +94,7 @@ export function TabsContent() {
                     </div>
                     <div className="border absolute border-gold-100/10 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
                         <Image
-                            src="/image/dynamicCam-Screen.jpg"
+                            src="/image/dynamicCam-Screen.webp"
                             alt="dummy image"
                             width="1000"
                             height="1000"
@@ -126,7 +126,7 @@ export function TabsContent() {
                     </div>
                     <div className="border absolute border-gold-100/10 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
                         <Image
-                            src="/image/bigwig-Screen.jpg"
+                            src="/image/bigwig-Screen.webp"
                             alt="dummy image"
                             width="1000"
                             height="1000"
@@ -160,7 +160,7 @@ export function TabsContent() {
                     </div>
                     <div className="border absolute border-gold-100/10 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
                         <Image
-                            src="/image/details-Screen.jpg"
+                            src="/image/details-Screen.webp"
                             alt="dummy image"
                             width="1000"
                             height="1000"
@@ -191,7 +191,7 @@ export function TabsContent() {
                     </div>
                     <div className="border absolute border-gold-100/10 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
                         <Image
-                            src="/image/raven-Screen.jpg"
+                            src="/image/raven-Screen.webp"
                             alt="dummy image"
                             width="1000"
                             height="1000"
@@ -227,7 +227,7 @@ export function TabsContent() {
                     </div>
                     <div className="border absolute border-gold-100/10 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
                         <Image
-                            src="/image/tchat-Screen.jpg"
+                            src="/image/tchat-Screen.webp"
                             alt="dummy image"
                             width="1000"
                             height="1000"
@@ -241,7 +241,7 @@ export function TabsContent() {
     ];
 
     return (
-        <div className="h-[40rem] md:h-[50rem] lg:h-[70rem] [perspective:1000px] relative b flex flex-col  max-w-[90vw] lg:max-w-[85vw] mx-auto w-full  items-start justify-start my-10 md:my-20 pb-12">
+        <div className="h-[40rem] md:h-[50rem] lg:h-[70rem] [perspective:1000px] relative b flex flex-col  max-w-[90vw] lg:max-w-[85vw] mx-auto w-full  items-start justify-start my-10 md:my-20 pb-12 z-20">
             <Tabs tabs={tabs} />
         </div>
     );
