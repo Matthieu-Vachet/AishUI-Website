@@ -77,7 +77,7 @@ export const Header = () => {
                         <ul
                             className={classNames(
                                 "flex h-full flex-col md:flex-row md:items-center md:justify-center text-3xl",
-                                "ease-in [&_a:hover]:text-purple gap-5 [&_a]:flex [&_a]:w-full [&_a]:translate-y-0  [&_a]:justify-center [&_a]:text-3xl [&_a]:transition-[color,transform] [&_a]:duration-300 md:[&_a]:translate-y-0 md:[&_a]:text-sm lg:[&_a]:text-md xl:[&_a]:text-xl md:hover:[&_a]:text-purple [&_a]:md:transition-colors",
+                                "ease-in [&_a:hover]:text-gold-100 gap-5 [&_a]:flex [&_a]:w-full [&_a]:translate-y-0  [&_a]:justify-center [&_a]:text-3xl [&_a]:transition-[color,transform] [&_a]:duration-300 md:[&_a]:translate-y-0 md:[&_a]:text-xl lg:[&_a]:text-xl xl:[&_a]:text-xl md:hover:[&_a]:text-gold-100 [&_a]:md:transition-colors",
                                 hamburgerMenuIsOpen && "[&_a]:translate-y-0",
                             )}
                         >
