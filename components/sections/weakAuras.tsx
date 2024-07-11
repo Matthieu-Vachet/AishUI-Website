@@ -25,17 +25,20 @@ const WeakAuras = () => {
             <div className="max-w-[95vw] lg:max-w-[85vw] 3xl:max-w-[60vw] mx-auto mt-10 md:mt-14">
                 <div className="relative grid grid-cols-1 gap-0 md:gap-5 mb-10 p-3 md:p-5">
                     {/* Sous titre section */}
+
                     <div className="flex flex-wrap justify-center items-center z-10">
                         <div className="flex flex-col justify-center items-center text-center">
-                            <p className="text-gold-100 text-xl md:text-2xl lg:text-3xl">
-                                Pour les 13 classes ainsi que les 39 spécialisations
-                            </p>
+                            <AnimatedElement delay={0.5} duration={0.5}>
+                                <p className="text-gold-100 text-xl md:text-2xl lg:text-3xl">
+                                    Pour les 13 classes ainsi que les 39 spécialisations
+                                </p>
+                            </AnimatedElement>
                         </div>
                     </div>
 
                     {/* Icones classe Wow */}
                     <div className="z-10">
-                        <div className="flex flex-wrap justify-center items-center p-5">
+                        <div className="flex flex-wrap justify-center items-center p-5 ">
                             {ImagesDatas.map((image, index) => (
                                 <div key={index}>
                                     <Image
@@ -43,7 +46,7 @@ const WeakAuras = () => {
                                         alt={image.alt}
                                         width={128}
                                         height={150}
-                                        className="w-14 md:w-24 lg:w-32"
+                                        className="w-14 md:w-24 lg:w-32 hover:scale-[1.35] transition-all duration-300 ease-in-out"
                                     />
                                 </div>
                             ))}
@@ -127,26 +130,32 @@ const WeakAuras = () => {
                 <div className="flex flex-wrap justify-center items-center text-center pt-5 md:pt-10 mb-20">
                     <div className="flex flex-col items-center gap-5 lg:gap-10">
                         {/* Feature Accessibilité */}
-                        <p className="bg-white/10 text-xl md:text-2xl lg:text-3xl 3xl:text-4xl text-gradient">
-                            Options <span className="text-gold-100">d’accessibilité</span>
-                        </p>
+                        <AnimatedElement delay={0.4} duration={0.5} direction="bottom" blur>
+                            <p className="bg-white/10 text-xl md:text-2xl lg:text-3xl 3xl:text-4xl text-gradient">
+                                Options <span className="text-gold-100">d’accessibilité</span>
+                            </p>
+                        </AnimatedElement>
 
                         {/* Composant séparateur */}
                         <Separator />
 
                         {/* Feature Config */}
-                        <p className="bg-white/10 text-xl md:text-2xl lg:text-3xl 3xl:text-4xl text-gradient">
-                            Aucune <span className="text-gold-100">configuration requise</span>
-                        </p>
+                        <AnimatedElement delay={0.5} duration={0.5} direction="bottom" blur>
+                            <p className="bg-white/10 text-xl md:text-2xl lg:text-3xl 3xl:text-4xl text-gradient">
+                                Aucune <span className="text-gold-100">configuration requise</span>
+                            </p>
+                        </AnimatedElement>
 
                         {/* Composant séparateur */}
                         <Separator />
 
                         {/* Feature Language */}
-                        <p className="bg-white/10 text-xl md:text-2xl lg:text-3xl 3xl:text-4xl text-gradient">
-                            Fonctionne avec{" "}
-                            <span className="text-gold-100">toutes les langues</span>
-                        </p>
+                        <AnimatedElement delay={0.6} duration={0.5} direction="bottom" blur>
+                            <p className="bg-white/10 text-xl md:text-2xl lg:text-3xl 3xl:text-4xl text-gradient">
+                                Fonctionne avec{" "}
+                                <span className="text-gold-100">toutes les langues</span>
+                            </p>
+                        </AnimatedElement>
                     </div>
                 </div>
             </div>
