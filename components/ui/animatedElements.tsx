@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -8,46 +7,52 @@ type AnimatedElementProps = {
     delay: number;
     duration?: number;
     className?: string;
+    direction?: "bottom" | "left" | "right";
+    blur?: boolean; // Ajout de la propriété blur
 };
 
 export default function AnimatedElement({
     children,
     delay,
-    duration,
+    duration = 0.3,
     className,
+    direction = "bottom",
+    blur = false, // Valeur par défaut pour préserver le comportement existant
 }: AnimatedElementProps) {
     const ctrls = useAnimation();
 
     const { ref, inView } = useInView({
-        threshold: 0.3, //  visibilité
-        triggerOnce: true, // Se déclenche une seule fois
+        threshold: 0.3,
+        triggerOnce: true,
     });
 
     useEffect(() => {
         if (inView) {
-            // Si l'élément est dans la vue
             ctrls.start("visible");
-        }
-        if (!inView) {
-            // Si l'élément n'est pas dans la vue
+        } else {
             ctrls.start("hidden");
         }
     }, [ctrls, inView]);
 
+    // Ajustement des variantes en fonction de la direction et de l'effet de flou
     const ElementVariante = {
         hidden: {
-            opacity: 0, // Opacité à 0
-            y: `2em`, // Décalage de 1em vers le bas
+            opacity: 0,
+            x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
+            y: direction === "bottom" ? "2em" : 0,
+            filter: blur ? "blur(10px)" : "none", // Applique un flou si blur est vrai
         },
         visible: {
-            opacity: 1, // Opacité à 1
-            y: `0em`, // Pas de décalage
+            opacity: 1,
+            x: "0%",
+            y: "0%",
+            filter: "blur(0px)", // Dissipe le flou
             transition: {
-                delay: delay, // Délai de 0.3s
-                duration: duration, // Durée de 0.3s
-                ease: [0.9, 0.9, 0.9, 0.9], // Courbe de transition
-                delayChildren: 0.5, // Délai des enfants
-                staggerChildren: 0.5, // Délai d'attente
+                delay: delay,
+                duration: duration,
+                ease: [0.9, 0.9, 0.9, 0.9],
+                delayChildren: 0.5,
+                staggerChildren: 0.5,
             },
         },
     };
