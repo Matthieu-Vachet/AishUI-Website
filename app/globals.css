@@ -9,6 +9,10 @@
     --background-end-rgb: 255, 255, 255;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @media (prefers-color-scheme: dark) {
     :root {
         --foreground-rgb: 255, 255, 255;
@@ -44,4 +48,8 @@
 
 .no-visible-scrollbar::-webkit-scrollbar {
     display: none;
+}
+
+.mask-radial-faded {
+    mask-image: radial-gradient(circle at center center, #171717, transparent 100%);
 }
