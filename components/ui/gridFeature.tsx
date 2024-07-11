@@ -6,7 +6,8 @@ import WordRotate from "@/components/ui/wordRotate";
 function GridFeature() {
     return (
         <div className="mx-auto h-[28rem] overflow-hidden md:h-auto md:overflow-auto z-50 lg:max-w-[85vw]">
-            <div className="flex snap-x snap-mandatory gap-6 overflow-x-auto px-8 pb-12 md:flex-wrap md:overflow-hidden">
+            <div className="flex snap-x snap-mandatory gap-6 overflow-x-auto px-8 md:px-0 pb-12 md:flex-wrap md:overflow-hidden">
+                {/* Grid 1 Profils */}
                 <div className="relative flex min-h-[20rem] w-full shrink-0 snap-center flex-col items-center justify-center overflow-hidden rounded-2xl border border-white/30 bg-glass-gradient p-8 text-center md:max-w-[calc(66.66%-12px)] md:basis-[calc(66.66%-12px)] md:p-4">
                     <div className="absolute inset-0 z-0 sepia opacity-20 hover:sepia-0 transition-sepia duration-300 ease-in-out">
                         <Image
@@ -25,6 +26,8 @@ function GridFeature() {
                         Profils compatible avec toute les classes
                     </p>
                 </div>
+
+                {/* Grid 2 WeakAuras */}
                 <div className="relative flex min-h-[20rem] w-full shrink-0 snap-center flex-col items-center justify-center overflow-hidden rounded-2xl border border-white/30 bg-glass-gradient p-20 text-center md:basis-[calc(33.33%-12px)] md:p-4 gap-16">
                     <div className="mask-linear-faded absolute top-[-9.2rem]"></div>
                     <div className="absolute inset-0 z-0 blur-sm opacity-20 hover:blur-0 transition-blur duration-300 ease-in-out">
@@ -35,17 +38,19 @@ function GridFeature() {
                             objectFit="cover"
                         />
                     </div>
-                    <div className="text-gold-100 font-semibold z-50">
-                        <p className="mb-4 text-3xl md:text-4xl lg:text-5xl ">WeakAuras</p>
-                        <p className="text-xl md:text-2xl lg:text-3xl text-primary-text text-white opacity-50">
+                    <div className="text-gold-100 font-semibold z-10">
+                        <p className="mb-4 text-3xl lg:text-5xl ">WeakAuras</p>
+                        <p className="text-xl md:text-2xl lg:text-3xl text-white opacity-50">
                             Pour les 13 classes et leurs spécialisations
                         </p>
                     </div>
                 </div>
+
+                {/* Grid 3 Addons */}
                 <div className="group relative flex min-h-[20rem] w-full shrink-0 snap-center flex-col items-center justify-center overflow-hidden rounded-2xl border border-white/30 bg-glass-gradient p-8 text-center md:basis-[calc(33.33%-12px)] md:p-4 gap-10">
                     <div className="pointer-events-none absolute top-[-8rem] w-[130%]"></div>
                     <div className="text-gold-100 font-semibold z-10">
-                        <p className="mb-4 text-3xl md:text-4xl lg:text-5xl">
+                        <p className="mb-4 text-3xl md:text-3xl lg:text-5xl">
                             Les Meilleurs Addons
                         </p>
                         <p className="text-xl md:text-2xl lg:text-3xl text-primary-text opacity-50">
@@ -66,8 +71,9 @@ function GridFeature() {
                         ]}
                     />
                 </div>
+
+                {/* Grid 4 Reshade */}
                 <div className="relative flex justify-center min-h-[20rem] w-full shrink-0 snap-center flex-col items-center overflow-hidden rounded-2xl border border-white/30 p-8 text-center md:max-w-[calc(66.66%-12px)] md:basis-[calc(66.66%-12px)] md:p-4">
-                    {/* Image de fond avec positionnement absolu */}
                     <div className="absolute inset-0 z-0 sepia opacity-30 hover:sepia-0 transition-sepia duration-300 ease-in-out">
                         <Image
                             src="/image/Reshade.webp"
@@ -76,7 +82,6 @@ function GridFeature() {
                             objectFit="cover"
                         />
                     </div>
-                    {/* Contenu superposé avec positionnement relatif */}
                     <div className="flex flex-col relative z-10 gap-10">
                         <div>
                             <p className="mb-4 text-3xl md:text-4xl lg:text-5xl text-gold-100 font-semibold">

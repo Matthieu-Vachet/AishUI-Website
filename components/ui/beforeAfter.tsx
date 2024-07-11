@@ -27,7 +27,7 @@ export const BeforeAfter = () => {
 
     return (
         <div
-            className="w-full relative border-2 border-gold-100/50 rounded-2xl max-w-[50vw] mx-auto mt-10"
+            className="w-full relative border-2 border-gold-100/50 rounded-2xl max-w-[90vw] lg:max-w-[70vw] 3xl:max-w-[50vw] mx-auto mt-10"
             onMouseUp={handleMouseUp}
         >
             <div

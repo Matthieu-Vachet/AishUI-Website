@@ -35,9 +35,9 @@ const Reshade = () => {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     className="w-8 h-8"
                 >
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -69,19 +69,24 @@ const Reshade = () => {
 
     return (
         <section id="reshade" className="relativ">
+            {/* Titre section */}
             <div className="text-center max-w-[95vw] lg:max-w-[85vw] 3xl:max-w-[75vw] mx-auto -mt-[8rem] md:-mt-[15rem]">
                 <AnimatedElement delay={0.4} duration={0.5}>
-                    <h2 className=" font-Morpheus text-white text-3xl md:text-5xl lg:text-7xl">
+                    <h1 className=" font-Morpheus text-white text-3xl md:text-4xl lg:text-6xl 3xl:text-7xl">
                         Reshade - EarthBinder
-                    </h2>
+                    </h1>
                 </AnimatedElement>
+
+                {/* Sous titre section */}
                 <AnimatedElement delay={0.4} duration={0.5}>
-                    <h3 className="mt-5 md:mt-10 text-xl md:text-2xl lg:text-3xl text-gold-100">
+                    <h2 className="mt-5 md:mt-10 text-xl md:text-2xl lg:text-3xl text-gold-100">
                         Suivez les visions de l’Earthbinder et découvrez WoW sous un autre jour,
                         pour une expérience visuelle et des graphismes enrichis !
-                    </h3>
+                    </h2>
                 </AnimatedElement>
             </div>
+
+            {/* Elipse Gold sous composant beforeAfter */}
             <div className="hidden md:block mx-auto lg:max-w-7xl px-6 text-center lg:px-8 ">
                 <div className="relative opacity-60 ">
                     <svg
@@ -104,15 +109,20 @@ const Reshade = () => {
                     </svg>
                 </div>
             </div>
+
+            {/* Composant BeforeAfter */}
             <div>
                 <BeforeAfter />
             </div>
 
             <div className="py-14 relative">
-                <div className="max-w-[90vw] lg:max-w-[85vw] mx-auto px-4 text-gray-400 md:px-8">
+                <div className="max-w-[95vw] 3xl:max-w-[75vw] mx-auto px-4 text-gray-400 md:px-8">
+                    {/* Composant séparateur */}
                     <div className="flex justify-center">
                         <Separator />
                     </div>
+
+                    {/* Feature Reshade */}
                     <div className="relative mt-12">
                         <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                             {features.map((item, idx) => (
@@ -123,12 +133,10 @@ const Reshade = () => {
                                     <div className="text-gold-100/50 rounded-full p-4 transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#8686f01f_inset] w-fit">
                                         {item.icon}
                                     </div>
-                                    <h4 className="text-xl md:text-2xl lg:text-3xl text-gold-100 tracking-tighter">
+                                    <h4 className="text-xl md:text-2xl text-gold-100 tracking-tighter">
                                         {item.title}
                                     </h4>
-                                    <p className="text-white/70 text-md md:text-lg lg:text-xl">
-                                        {item.desc}
-                                    </p>
+                                    <p className="text-white/70 text-md md:text-lg">{item.desc}</p>
                                 </li>
                             ))}
                         </ul>

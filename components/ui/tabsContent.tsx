@@ -28,7 +28,7 @@ export function TabsContent() {
                             <span className="text-gold-100">/moveui</span>
                         </p>
                     </div>
-                    <div className="border absolute border-gold-100/10 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
+                    <div className="border absolute border-gold-100/30 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
                         <Image
                             src="/image/elvui-Screen.webp"
                             alt="dummy image"
@@ -60,7 +60,7 @@ export function TabsContent() {
                             Commande en jeu: <span className="text-gold-100">/wa</span>
                         </p>
                     </div>
-                    <div className="border absolute border-gold-100/10 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
+                    <div className="border absolute border-gold-100/30 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
                         <Image
                             src="/image/weekAura-Screen.webp"
                             alt="dummy image"
@@ -92,7 +92,7 @@ export function TabsContent() {
                             Commande en jeu: <span className="text-gold-100">/dc</span>
                         </p>
                     </div>
-                    <div className="border absolute border-gold-100/10 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
+                    <div className="border absolute border-gold-100/30 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
                         <Image
                             src="/image/dynamicCam-Screen.webp"
                             alt="dummy image"
@@ -124,7 +124,7 @@ export function TabsContent() {
                             Commande en jeu: <span className="text-gold-100">/bw</span>
                         </p>
                     </div>
-                    <div className="border absolute border-gold-100/10 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
+                    <div className="border absolute border-gold-100/30 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
                         <Image
                             src="/image/bigwig-Screen.webp"
                             alt="dummy image"
@@ -158,7 +158,7 @@ export function TabsContent() {
                             Commande en jeu: <span className="text-gold-100">/details options</span>
                         </p>
                     </div>
-                    <div className="border absolute border-gold-100/10 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
+                    <div className="border absolute border-gold-100/30 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
                         <Image
                             src="/image/details-Screen.webp"
                             alt="dummy image"
@@ -189,7 +189,7 @@ export function TabsContent() {
                             Commande en jeu: <span className="text-gold-100">/raven</span>
                         </p>
                     </div>
-                    <div className="border absolute border-gold-100/10 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
+                    <div className="border absolute border-gold-100/30 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
                         <Image
                             src="/image/raven-Screen.webp"
                             alt="dummy image"
@@ -225,7 +225,7 @@ export function TabsContent() {
                             <span className="text-gold-100">/gil gui</span>
                         </p>
                     </div>
-                    <div className="border absolute border-gold-100/10 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-black-100">
+                    <div className="border absolute border-gold-100/30 h-[60%] mt-10 md:h-[90%]  inset-x-0 w-[90%] mx-auto rounded-2xl p-4 bg-white-100">
                         <Image
                             src="/image/tchat-Screen.webp"
                             alt="dummy image"
@@ -241,7 +241,7 @@ export function TabsContent() {
     ];
 
     return (
-        <div className="h-[40rem] md:h-[50rem] lg:h-[70rem] [perspective:1000px] relative b flex flex-col  max-w-[90vw] lg:max-w-[85vw] mx-auto w-full  items-start justify-start my-10 md:my-20 pb-12 z-20">
+        <div className="h-[35em] md:h-[40rem] lg:h-[50rem] xl:h-[55rem] 3xl:h-[70rem] [perspective:1000px] relative b flex flex-col  max-w-[90vw] lg:max-w-[85vw] mx-auto w-full  items-start justify-start my-10 md:my-20 pb-12 z-20">
             <Tabs tabs={tabs} />
         </div>
     );

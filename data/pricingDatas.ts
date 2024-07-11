@@ -41,7 +41,7 @@ export const tiersPackUi = [
         url: "https://ko-fi.com/s/c77e9c8e6c",
     },
     {
-        name: "Pack Complet AishUI",
+        name: "Pack Complet",
         id: "tier-3",
         href: "#",
         details: "Compatible RETAIL et CLASSIC",
