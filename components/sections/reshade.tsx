@@ -5,6 +5,7 @@ import React from "react";
 import AnimatedElement from "@/components/ui/animatedElements";
 import { BeforeAfter } from "@/components/ui/beforeAfter";
 import { Separator } from "../ui/separator";
+import ThreeDPhotoCarousel from "../ui/carousel";
 
 const Reshade = () => {
     const features = [
@@ -68,7 +69,10 @@ const Reshade = () => {
     ];
 
     return (
-        <section id="reshade" className="relativ">
+        <section
+            id="reshade"
+            className="relative bg-gradient-to-b from-black-100 via-gold-100/10 to-black-100 "
+        >
             {/* Titre section */}
             <div className="text-center max-w-[95vw] lg:max-w-[85vw] 3xl:max-w-[75vw] mx-auto -mt-[8rem] md:-mt-[15rem]">
                 <AnimatedElement delay={0.4} duration={0.5}>
@@ -128,19 +132,32 @@ const Reshade = () => {
                             {features.map((item, idx) => (
                                 <li
                                     key={idx}
-                                    className="bg-transparent transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#BC994D2f_inset] space-y-3 p-4 border rounded-3xl dark:hover:border-gold-100/50 transition-all duration-500 ease-in-out"
+                                    className="bg-transparent transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#BC994D2f_inset] space-y-3 p-4 border rounded-3xl dark:hover:border-gold-100/50 transition-all duration-500 ease-in-out text-start"
                                 >
                                     <div className="text-gold-100/50 rounded-full p-4 transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#8686f01f_inset] w-fit">
                                         {item.icon}
                                     </div>
-                                    <h4 className="text-xl md:text-2xl text-gold-100 tracking-tighter">
+                                    <p className="text-xl md:text-2xl text-gold-100 tracking-tighter">
                                         {item.title}
-                                    </h4>
+                                    </p>
                                     <p className="text-white/70 text-md md:text-lg">{item.desc}</p>
                                 </li>
                             ))}
                         </ul>
                     </div>
+                </div>
+            </div>
+            <div className="bg-gradient-to-b from-black-100 via-gold-100/10 to-black-100">
+                <div className="text-center max-w-[95vw] lg:max-w-[85vw] 3xl:max-w-[75vw] mx-auto">
+                    <AnimatedElement delay={0.4} duration={0.5}>
+                        <h2 className="mt-5 md:mt-10 text-2xl md:text-3xl lg:text-4xl text-gold-100">
+                            Quelques aperçus du Reshade
+                        </h2>
+                    </AnimatedElement>
+                </div>
+
+                <div>
+                    <ThreeDPhotoCarousel />
                 </div>
             </div>
         </section>
