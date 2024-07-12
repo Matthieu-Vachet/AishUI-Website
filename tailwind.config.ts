@@ -50,6 +50,8 @@ const config: Config = {
                 "slide-in-left":
                     "slide-in-left 1000ms var(--animation-delay, 0ms) ease-out forwards",
                 "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
+                "modal-fade-in": "modal-fade-in 500ms ease-out",
+                "modal-fade-out": "modal-fade-out 500ms ease-in",
             },
             keyframes: {
                 "fade-in": {
@@ -87,6 +89,14 @@ const config: Config = {
                     "100%": {
                         "offset-distance": "100%",
                     },
+                },
+                "modal-fade-in": {
+                    "0%": { opacity: "0" },
+                    "100%": { opacity: "1" },
+                },
+                "modal-fade-out": {
+                    "0%": { opacity: "1" },
+                    "100%": { opacity: "0" },
                 },
             },
         },
