@@ -3,6 +3,8 @@
 import { memo, useEffect, useLayoutEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion, useAnimation, useMotionValue, useTransform } from "framer-motion";
 
+import { carouselImages } from "@/data/reshadeDatas";
+
 export const useIsomorphicLayoutEffect =
     typeof window !== "undefined" ? useLayoutEffect : useEffect;
 
@@ -48,20 +50,6 @@ export function useMediaQuery(
 
     return matches;
 }
-
-const imageNames = [
-    "reshadepicture1.png",
-    "reshadepicture2.png",
-    "reshadepicture3.webp",
-    "reshadepicture4.webp",
-    "reshadepicture5.png",
-    "reshadepicture6.webp",
-    "reshadepicture7.webp",
-    "reshadepicture8.webp",
-    "reshadepicture9.webp",
-    "reshadepicture10.webp",
-    "reshadepicture11.webp",
-];
 
 const duration = 0.15;
 const transition = { duration, ease: [0.32, 0.72, 0, 1], filter: "blur(4px)" };
@@ -164,7 +152,10 @@ export default function ThreeDPhotoCarousel() {
     const [activeImg, setActiveImg] = useState<string | null>(null);
     const [isCarouselActive, setIsCarouselActive] = useState(true);
     const controls = useAnimation();
-    const cards = useMemo(() => imageNames.map((imageName) => `/reshade/${imageName}`), []);
+    const cards = useMemo(
+        () => carouselImages.map((carouselImages) => `/reshade/${carouselImages}`),
+        [],
+    );
 
     useEffect(() => {
         console.log("Cards loaded:", cards);

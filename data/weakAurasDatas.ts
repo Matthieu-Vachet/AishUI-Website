@@ -1,3 +1,4 @@
+// Description: Liste d'image pour les Classes section WeakAuras
 export const ImagesDatas = [
     { src: "/image/classe/Chaman.webp", alt: "Image de la classe Chaman" },
     { src: "/image/classe/Chasseur-de-démons.webp", alt: "Image de la classe Chasseur de démon" },

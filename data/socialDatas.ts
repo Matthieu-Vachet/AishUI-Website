@@ -1,3 +1,4 @@
+// Description: Fichier contenant les Types pour les données des réseaux sociaux
 export interface SocialDatasTypes {
     name: string;
     image: string;
@@ -8,6 +9,7 @@ export interface SocialDatasTypes {
     styles?: string;
 }
 
+// Description: Liste d'image et données pour les réseaux sociaux
 export const SocialDatas: SocialDatasTypes[] = [
     {
         name: "Ko-fi",

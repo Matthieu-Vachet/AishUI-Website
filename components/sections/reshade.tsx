@@ -7,67 +7,9 @@ import { BeforeAfter } from "@/components/ui/beforeAfter";
 import { Separator } from "../ui/separator";
 import ThreeDPhotoCarousel from "../ui/carousel";
 
-const Reshade = () => {
-    const features = [
-        {
-            icon: (
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-8 h-8"
-                >
-                    <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
-                    />
-                </svg>
-            ),
-            title: "Performances",
-            desc: "Impact minime sur vos performances en jeu qui reste fluide qu'importe votre configuration",
-        },
-        {
-            icon: (
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="w-8 h-8"
-                >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
-                    <path d="M13 9h2a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-1a1 1 0 0 0 -1 1v1a1 1 0 0 0 1 1h2" />
-                    <path d="M8 12h2" />
-                    <path d="M10 9h-2v6" />
-                </svg>
-            ),
-            title: "Accessibilité",
-            desc: "Une simple touche pour activer ou désactiver le Reshade",
-        },
-        {
-            icon: (
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-8 h-8"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M17 3.34a10 10 0 1 1 -15 8.66l.005 -.324a10 10 0 0 1 14.995 -8.336m-9 1.732a8 8 0 0 0 4.001 14.928l-.001 -16a8 8 0 0 0 -4 1.072" />
-                </svg>
-            ),
-            title: "Polyvalence",
-            desc: "Profil jour et nuit. Adaptez facilement le reshade à la luminosité de la scène avec un simple raccourci !",
-        },
-    ];
+import { reshadeFeatures } from "@/data/reshadeDatas";
 
+const Reshade = () => {
     return (
         <section
             id="reshade"
@@ -129,7 +71,7 @@ const Reshade = () => {
                     {/* Feature Reshade */}
                     <div className="relative mt-12">
                         <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                            {features.map((item, idx) => (
+                            {reshadeFeatures.map((item, idx) => (
                                 <li
                                     key={idx}
                                     className="bg-transparent transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#BC994D2f_inset] space-y-3 p-4 border rounded-3xl dark:hover:border-gold-100/50 transition-all duration-500 ease-in-out text-start"

@@ -1,5 +1,4 @@
-import { url } from "inspector";
-
+// Description: Données des tarifs pour les packs AishUI
 export const tiersPackUi = [
     {
         name: "Pack Classic",
@@ -64,6 +63,7 @@ export const tiersPackUi = [
     },
 ];
 
+// Description: Données des tarifs pour les packs d'addons et de reshade
 export const tiersPackAddons = [
     {
         name: "Reshade • EarthBinder",
