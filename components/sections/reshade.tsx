@@ -5,70 +5,16 @@ import React from "react";
 import AnimatedElement from "@/components/ui/animatedElements";
 import { BeforeAfter } from "@/components/ui/beforeAfter";
 import { Separator } from "../ui/separator";
+import ThreeDPhotoCarousel from "../ui/carousel";
+
+import { reshadeFeatures } from "@/data/reshadeDatas";
 
 const Reshade = () => {
-    const features = [
-        {
-            icon: (
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className="w-8 h-8"
-                >
-                    <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
-                    />
-                </svg>
-            ),
-            title: "Performances",
-            desc: "Impact minime sur vos performances en jeu qui reste fluide qu'importe votre configuration",
-        },
-        {
-            icon: (
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="w-8 h-8"
-                >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M3 3m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
-                    <path d="M13 9h2a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-1a1 1 0 0 0 -1 1v1a1 1 0 0 0 1 1h2" />
-                    <path d="M8 12h2" />
-                    <path d="M10 9h-2v6" />
-                </svg>
-            ),
-            title: "Accessibilité",
-            desc: "Une simple touche pour activer ou désactiver le Reshade",
-        },
-        {
-            icon: (
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-8 h-8"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M17 3.34a10 10 0 1 1 -15 8.66l.005 -.324a10 10 0 0 1 14.995 -8.336m-9 1.732a8 8 0 0 0 4.001 14.928l-.001 -16a8 8 0 0 0 -4 1.072" />
-                </svg>
-            ),
-            title: "Polyvalence",
-            desc: "Profil jour et nuit. Adaptez facilement le reshade à la luminosité de la scène avec un simple raccourci !",
-        },
-    ];
-
     return (
-        <section id="reshade" className="relativ">
+        <section
+            id="reshade"
+            className="relative bg-gradient-to-b from-black-100 via-gold-100/10 to-black-100 "
+        >
             {/* Titre section */}
             <div className="text-center max-w-[95vw] lg:max-w-[85vw] 3xl:max-w-[75vw] mx-auto -mt-[8rem] md:-mt-[15rem]">
                 <AnimatedElement delay={0.4} duration={0.5}>
@@ -125,22 +71,35 @@ const Reshade = () => {
                     {/* Feature Reshade */}
                     <div className="relative mt-12">
                         <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                            {features.map((item, idx) => (
+                            {reshadeFeatures.map((item, idx) => (
                                 <li
                                     key={idx}
-                                    className="bg-transparent transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#BC994D2f_inset] space-y-3 p-4 border rounded-3xl dark:hover:border-gold-100/50 transition-all duration-500 ease-in-out"
+                                    className="bg-transparent transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#BC994D2f_inset] space-y-3 p-4 border rounded-3xl dark:hover:border-gold-100/50 transition-all duration-500 ease-in-out text-start"
                                 >
                                     <div className="text-gold-100/50 rounded-full p-4 transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#8686f01f_inset] w-fit">
                                         {item.icon}
                                     </div>
-                                    <h4 className="text-xl md:text-2xl text-gold-100 tracking-tighter">
+                                    <p className="text-xl md:text-2xl text-gold-100 tracking-tighter">
                                         {item.title}
-                                    </h4>
+                                    </p>
                                     <p className="text-white/70 text-md md:text-lg">{item.desc}</p>
                                 </li>
                             ))}
                         </ul>
                     </div>
+                </div>
+            </div>
+            <div className="bg-gradient-to-b from-black-100 via-gold-100/10 to-black-100">
+                <div className="text-center max-w-[95vw] lg:max-w-[85vw] 3xl:max-w-[75vw] mx-auto">
+                    <AnimatedElement delay={0.4} duration={0.5}>
+                        <h2 className="mt-5 md:mt-10 text-2xl md:text-3xl lg:text-4xl text-gold-100">
+                            Quelques aperçus du Reshade
+                        </h2>
+                    </AnimatedElement>
+                </div>
+
+                <div>
+                    <ThreeDPhotoCarousel />
                 </div>
             </div>
         </section>

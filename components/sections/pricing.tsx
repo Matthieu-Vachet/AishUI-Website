@@ -70,7 +70,7 @@ const Pricing = () => {
                                     {tiersPackUi.map((tier) => (
                                         <div
                                             key={tier.id}
-                                            className={`flex z-10 flex-col justify-between rounded-3xl bg-transparent p-8 shadow-xl ring-1 ring-gray-900/10 sm:p-10 [box-shadow:0_-20px_80px_-20px_#BC994D0f_inset] ${
+                                            className={`flex z-10 flex-col justify-between rounded-3xl bg-transparent p-8 shadow-xl ring-1 ring-gray-900/10 sm:p-10 [box-shadow:0_-20px_80px_-20px_#BC994D4f_inset] ${
                                                 tier.bestPack
                                                     ? "border-2 border-gold-100"
                                                     : "[border:1px_solid_rgba(255,255,255,.1)]"
