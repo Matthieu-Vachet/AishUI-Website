@@ -89,7 +89,7 @@ const Reshade = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-gradient-to-b from-black-100 via-gold-100/10 to-black-100">
+            <div className="bg-transparent md:bg-gradient-to-b from-black-100 via-gold-100/10 to-black-100">
                 <div className="text-center max-w-[95vw] lg:max-w-[85vw] 3xl:max-w-[75vw] mx-auto">
                     <AnimatedElement delay={0.4} duration={0.5}>
                         <h2 className="mt-5 md:mt-10 text-2xl md:text-3xl lg:text-4xl text-gold-100">

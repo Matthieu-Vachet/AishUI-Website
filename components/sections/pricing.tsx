@@ -20,7 +20,7 @@ const Pricing = () => {
                 <div className="text-center z-20 mx-auto max-w-[95vw] lg:max-w-[85vw] 3xl:max-w-[75vw]">
                     {/* Titre section */}
                     <AnimatedElement delay={0.4} duration={0.5}>
-                        <h1 className=" font-Morpheus mt-32 md:mt-40 text-3xl md:text-4xl lg:text-6xl 3xl:text-7xl ">
+                        <h1 className=" font-Morpheus  md:mt-40 text-3xl md:text-4xl lg:text-6xl 3xl:text-7xl ">
                             Obtenez{" "}
                             <span className=" font-GeistSans border-t-2 border-b-2 border-gold-100">
                                 Aish<span className="font-bold text-gold-100">UI</span>
