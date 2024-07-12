@@ -30,7 +30,7 @@ const AishUi = () => {
             <div className="mx-auto max-w-[95vw] lg:max-w-[85vw] 3xl:max-w-[75vw]">
                 {/* Sous section version mobile */}
                 <div className="flex md:hidden flex-col justify-center items-center mb-8 gap-5">
-                    <h1 className="text-gradient text-center text-5xl border-t-2 border-b-2 border-t-gold-100 border-b-gold-100 ">
+                    <h1 className="text-gradient text-center text-4xl border-t-2 border-b-2 border-t-gold-100 border-b-gold-100 ">
                         Aish<span className=" text-gold-100">UI</span>
                     </h1>
                     <div className="mx-auto text-lg leading-tight text-white/50 md:w-[80%]">
