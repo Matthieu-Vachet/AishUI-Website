@@ -101,11 +101,11 @@ const Hero = () => {
                 >
                     <PulsatingButton
                         text="Obtenir AishUI"
-                        pulseColor="188, 144, 77"
+                        pulseColor="77,59,30"
                         backgroundColor="#BC994D"
                         textColor="#ffffff"
                         animationDuration="1.5s"
-                        buttonWidth="200px"
+                        buttonWidth="150px"
                         buttonHeight="50px"
                     />
                 </Link>
