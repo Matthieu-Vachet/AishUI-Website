@@ -241,7 +241,7 @@ export function TabsContent() {
     ];
 
     return (
-        <div className="h-[35em] md:h-[40rem] lg:h-[50rem] xl:h-[55rem] 3xl:h-[70rem] [perspective:1000px] relative b flex flex-col  max-w-[90vw] lg:max-w-[85vw] mx-auto w-full  items-start justify-start my-10 md:my-20 pb-12 z-20">
+        <div className="h-[35em] md:h-[40rem] lg:h-[50rem] xl:h-[55rem] 3xl:h-[70rem] [perspective:1000px] relative b flex flex-col  max-w-[90vw] lg:max-w-[85vw] mx-auto w-full  items-start justify-start mt-10 md:mt-20 pb-20 z-20">
             <Tabs tabs={tabs} />
         </div>
     );
