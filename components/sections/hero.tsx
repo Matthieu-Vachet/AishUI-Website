@@ -13,7 +13,7 @@ const Hero = () => {
     return (
         <section id="home" className="w-full relative flex justify-center pt-32">
             {/* Background Image */}
-            <div className="absolute top-0 left-0 right-0 bottom-0 opacity-15">
+            <div className="absolute top-0 left-0 right-0 bottom-0 opacity-35 md:opacity-20">
                 <Image
                     src="/background/bg-wow.webp"
                     alt="Hero Background Image"
