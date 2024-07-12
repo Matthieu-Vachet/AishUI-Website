@@ -10,19 +10,16 @@ import { ImagesDatas } from "@/data/weakAurasDatas";
 
 const WeakAuras = () => {
     return (
-        <section
-            id="weakauras"
-            className="bg-gradient-to-b from-black-100 via-gold-100/15 to-black-100"
-        >
+        <section id="weakauras" className="bg-gradient-to-b from-gold-100/15 to-black-100">
             {/* Titre section */}
             <div className="text-center z-20">
                 <AnimatedElement delay={0.4} duration={0.5}>
-                    <h1 className=" font-Morpheus mt-36 md:mt-48 text-3xl md:text-4xl lg:text-6xl 3xl:text-7xl text-gradient">
+                    <h1 className=" font-Morpheus pt-20 md:pt-48 text-3xl md:text-4xl lg:text-6xl 3xl:text-7xl text-gradient">
                         Un WeakAuras sur <span className="font-bold text-gold-100">mesure</span>
                     </h1>
                 </AnimatedElement>
             </div>
-            <div className="max-w-[95vw] lg:max-w-[85vw] 3xl:max-w-[60vw] mx-auto mt-10 md:mt-14">
+            <div className="max-w-[95vw] lg:max-w-[85vw] xl:max-w-[70vw] 3xl:max-w-[55vw] mx-auto mt-10 md:mt-14">
                 <div className="relative grid grid-cols-1 gap-0 md:gap-5 mb-10 p-3 md:p-5">
                     {/* Sous titre section */}
 
