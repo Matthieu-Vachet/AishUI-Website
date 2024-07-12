@@ -18,7 +18,7 @@ export const SocialDatas: SocialDatasTypes[] = [
         url: "https://ko-fi.com/aishuutv?action=gallery",
         width: 30,
         height: 30,
-        styles: "w-7 h-7 hover:scale-110 transition-scale duration-300 ease-in-out",
+        styles: "w-7 h-7",
     },
     {
         name: "Twitch",
@@ -27,7 +27,7 @@ export const SocialDatas: SocialDatasTypes[] = [
         url: "https://www.twitch.tv/Aishuu",
         width: 30,
         height: 30,
-        styles: "w-7 h-6 hover:scale-110 transition-scale duration-300 ease-in-out",
+        styles: "w-7 h-6",
     },
     {
         name: "Youtube",
@@ -36,7 +36,7 @@ export const SocialDatas: SocialDatasTypes[] = [
         url: "https://www.youtube.com/channel/UCCmAVfJTJuwnUIuK42tgOtA",
         width: 30,
         height: 30,
-        styles: "w-7 h-7 hover:scale-110 transition-scale duration-300 ease-in-out",
+        styles: "w-7 h-7",
     },
     {
         name: "Discord",
@@ -45,7 +45,7 @@ export const SocialDatas: SocialDatasTypes[] = [
         url: "",
         width: 30,
         height: 30,
-        styles: "w-7 h-7 hover:scale-110 transition-scale duration-300 ease-in-out",
+        styles: "w-7 h-7",
     },
     {
         name: "Twitter",
@@ -54,6 +54,6 @@ export const SocialDatas: SocialDatasTypes[] = [
         url: "https://x.com/Aishuu_TV",
         width: 30,
         height: 30,
-        styles: "w-6 h-6 hover:scale-110 transition-scale duration-300 ease-in-out",
+        styles: "w-6 h-6",
     },
 ];

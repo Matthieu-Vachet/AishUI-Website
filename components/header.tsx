@@ -8,7 +8,7 @@ import classNames from "classnames";
 import { HamburgerIcon } from "@/components/icons/Hamburger";
 import { IoChevronBackCircleOutline } from "react-icons/io5";
 
-import { ModeToggle } from "@/components/ui/themeToggle";
+// import { ModeToggle } from "@/components/ui/themeToggle";
 
 import { HeroDatas } from "@/data/heroDatas";
 import { SocialDatas, SocialDatasTypes } from "@/data/socialDatas";
@@ -40,19 +40,42 @@ export const Header = () => {
     return (
         <header className="fixed top-0 left-0 z-50 w-full border-b border-transparent backdrop-blur-[12px] p-3 rounded-b-3xl bg-white/5 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
             <div className="flex justify-between items-center mx-4">
-                <Link className="flex items-center text-md gap-3" href="/">
-                    <Image
-                        src={HeroDatas.logo.src}
-                        alt={HeroDatas.logo.alt}
-                        width={40}
-                        height={36}
-                        priority
-                        className="w-10 h-10"
-                    />
-                    <p className="flex text-2xl border-t-2 border-b-2 border-gold-100/50">
-                        Aish <span className="text-gold-100">UI</span>
-                    </p>
-                </Link>
+                <div className="flex gap-10 items-center text-center ">
+                    <div>
+                        <Link className="flex items-center text-md gap-1" href="/">
+                            <Image
+                                src={HeroDatas.logo.src}
+                                alt={HeroDatas.logo.alt}
+                                width={40}
+                                height={36}
+                                priority
+                                className="w-10 h-10"
+                            />
+                            <p className="flex text-2xl border-t-2 border-b-2 border-gold-100/50">
+                                Aish <span className="text-gold-100">UI</span>
+                            </p>
+                        </Link>
+                    </div>
+                    <div className="relative hidden md:flex md:justify-center md:items-center md:gap-3 z-10">
+                        {/* <ModeToggle /> */}
+                        <div className="flex justify-center items-center gap-3">
+                            {SocialDatas.map((social: SocialDatasTypes) => (
+                                <Link key={social.name} href={social.url} passHref legacyBehavior>
+                                    <a target="_blank" rel="noopener noreferrer">
+                                        <Image
+                                            src={social.image}
+                                            alt={social.alt}
+                                            width={social.width}
+                                            height={social.height}
+                                            priority
+                                            className={`hover:scale-125 transition-all duration-300 ease-in-out  ${social.styles}`}
+                                        />
+                                    </a>
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+                </div>
 
                 <div
                     className={classNames(
@@ -114,25 +137,6 @@ export const Header = () => {
                         </ul>
                     </nav>
                 </div>
-                {/* <div className="relative hidden md:flex md:justify-center md:items-center md:gap-3 z-10">
-                    <ModeToggle />
-                    <div className="flex justify-center items-center gap-3">
-                        {SocialDatas.map((social: SocialDatasTypes) => (
-                            <Link key={social.name} href={social.url} passHref legacyBehavior>
-                                <a target="_blank" rel="noopener noreferrer">
-                                    <Image
-                                        src={social.image}
-                                        alt={social.alt}
-                                        width={social.width}
-                                        height={social.height}
-                                        priority
-                                        className={social.styles}
-                                    />
-                                </a>
-                            </Link>
-                        ))}
-                    </div>
-                </div> */}
                 <button
                     className="ml-6 md:hidden"
                     onClick={() => setHamburgerMenuIsOpen((open) => !open)}
