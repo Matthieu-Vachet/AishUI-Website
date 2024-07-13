@@ -18,8 +18,8 @@ const CookieConsent = (props: any) => {
     }
 
     return (
-        <div className="fixed inset-0 bg-transparent z-50">
-            <div className="fixed bottom-0 w-full flex flex-col md:flex-row items-center justify-center md:justify-around text-center mx-auto py-4 gap-5 bg-transparent/50">
+        <div className="fixed inset-0 bg-transparent z-30 h-5">
+            <div className="fixed bottom-0 w-full  flex flex-col md:flex-row items-center justify-center md:justify-around text-center mx-auto py-4 gap-5 bg-transparent/50">
                 <span className="text-dark text-sm md:text-base">
                     Ce site utilise des cookies pour améliorer l&apos;expérience utilisateur. En
                     utilisant notre site, vous consentez à tous les cookies conformément à notre
