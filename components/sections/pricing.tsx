@@ -5,6 +5,7 @@ import Link from "next/link";
 
 import ShimmerButton from "@/components/ui/shimerBouton";
 import AnimatedElement from "@/components/ui/animatedElements";
+import NumberTicker from "../ui/numberTicker";
 
 import { tiersPackUi, tiersPackAddons } from "@/data/pricingDatas";
 
@@ -65,7 +66,23 @@ const Pricing = () => {
                     {/* Different tiers */}
                     <div className="flow-root z-20 bg-transparent pb-24 sm:pb-32">
                         <div className="-mt-80">
-                            <div className="mx-auto max-w-[95vw] 3xl:max-w-[70vw]  lg:px-8">
+                            <div className="mx-auto max-w-[95vw] 3xl:max-w-[70vw] lg:px-8">
+                                <div className=" flex justify-center items-end gap-5 mb-10">
+                                    <p className="text-xl md:text-2xl lg:text-3xl">
+                                        Toi aussi, rejoins les plus de{" "}
+                                    </p>
+                                    <div className="text-2xl md:text-3xl lg:text-5xl 3xl:text-6xl font-bold ">
+                                        <NumberTicker
+                                            value={1300}
+                                            delay={0}
+                                            className="text-gold-100"
+                                        />
+                                    </div>
+                                    <p className="text-xl md:text-2xl lg:text-3xl">
+                                        {" "}
+                                        utilisateurs actifs
+                                    </p>
+                                </div>
                                 <div className="mx-auto grid grid-cols-1 gap-8 lg:grid-cols-3">
                                     {tiersPackUi.map((tier) => (
                                         <div

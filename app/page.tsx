@@ -8,6 +8,7 @@ const Addons = lazy(() => import("@/components/sections/addons"));
 const WeakAuras = lazy(() => import("@/components/sections/weakAuras"));
 const Reshade = lazy(() => import("@/components/sections/reshade"));
 const Pricing = lazy(() => import("@/components/sections/pricing"));
+import { Footer } from "@/components/footer";
 
 import Particles from "@/components/ui/particles";
 import classNames from "classnames";
@@ -51,6 +52,7 @@ export default function Home() {
                         <Pricing />
                     </div>
                 </Suspense>
+                <Footer />
             </div>
         </main>
     );
