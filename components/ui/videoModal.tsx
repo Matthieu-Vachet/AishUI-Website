@@ -219,7 +219,7 @@ function VideoModalComponent() {
                                     height={1200}
                                     src="/image/videoYoutube.webp"
                                     alt="Video preview"
-                                    className="size-full border border-gold-100 rounded-xl"
+                                    className="size-full"
                                 />
                             </VideoPreview>
                             <VideoPlayButton>
@@ -228,7 +228,7 @@ function VideoModalComponent() {
                                 </span>
                             </VideoPlayButton>
                             <iframe
-                                className="size-full border border-gold-100 rounded-xl p-1"
+                                className="size-full"
                                 src="https://www.youtube.com/embed/xQ00oQ-yi2Q?si=HVdJD6ernKxdgv80"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowFullScreen
