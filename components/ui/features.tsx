@@ -4,6 +4,7 @@ import React from "react";
 import classNames from "classnames";
 import { useInView } from "react-intersection-observer";
 import { Container } from "@/components/ui/container";
+import { VideoModalComponent } from "@/components/ui/videoModal";
 
 type FeaturesProps = {
     children: React.ReactNode;
@@ -53,10 +54,13 @@ const MainFeature = ({ text, title, title2 }: MainFeatureProps) => {
                     </h1>
                 </Container>
             </div>
-            <Container className="w-[78rem] max-w-[90%] text-center">
-                <h2 className="mx-auto mb-[2rem] md:mb-[5rem] my-16 text-lg leading-tight text-white/50 md:w-[80%] md:text-2xl lg:text-3xl">
+            <Container className="w-[78rem] max-w-[90%] text-center my-16">
+                <h2 className="mx-auto  text-lg leading-tight text-white/50 md:w-[80%] md:text-2xl lg:text-3xl">
                     {text}
                 </h2>
+                <div className="my-[2rem]">
+                    <VideoModalComponent />
+                </div>
                 <hr className="mb-[5rem] md:mb-[7.2rem] h-[1px] border-none bg-[linear-gradient(to_right,transparent,rgba(255,255,255,0.2)_50%,transparent)]" />
             </Container>
         </>

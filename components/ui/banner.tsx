@@ -1,5 +1,5 @@
 import React from "react";
-import { hasCookie, setCookie } from "cookies-next";
+import { hasCookie, setCookie, getCookies } from "cookies-next";
 
 const CookieConsent = (props: any) => {
     const [showConsent, setShowConsent] = React.useState(true);
@@ -13,13 +13,18 @@ const CookieConsent = (props: any) => {
         setCookie("localConsent", "true", {});
     };
 
+    const cookies = getCookies();
+    Object.keys(cookies).forEach((cookieName) => {
+        console.log(cookieName);
+    });
+
     if (showConsent) {
         return null;
     }
 
     return (
-        <div className="fixed inset-0 bg-transparent z-30 h-5">
-            <div className="fixed bottom-0 w-full  flex flex-col md:flex-row items-center justify-center md:justify-around text-center mx-auto py-4 gap-5 bg-transparent/50">
+        <div className="fixed inset-0 z-30 h-5">
+            <div className="fixed bottom-0 w-full  flex flex-col md:flex-row items-center justify-center md:justify-around text-center mx-auto py-4 gap-5 bg-white/10">
                 <span className="text-dark text-sm md:text-base">
                     Ce site utilise des cookies pour améliorer l&apos;expérience utilisateur. En
                     utilisant notre site, vous consentez à tous les cookies conformément à notre

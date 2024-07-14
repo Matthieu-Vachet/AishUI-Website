@@ -1,3 +1,4 @@
+import { Scale } from "lucide-react";
 import type { Config } from "tailwindcss";
 const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette");
 
@@ -52,6 +53,7 @@ const config: Config = {
                 "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
                 "modal-fade-in": "modal-fade-in 500ms ease-out",
                 "modal-fade-out": "modal-fade-out 500ms ease-in",
+                "scale-infinite": "scale-infinite 2s infinite",
             },
             keyframes: {
                 "fade-in": {
@@ -97,6 +99,10 @@ const config: Config = {
                 "modal-fade-out": {
                     "0%": { opacity: "1" },
                     "100%": { opacity: "0" },
+                },
+                "scale-infinite": {
+                    "0%, 100%": { transform: "scale(1)" },
+                    "50%": { transform: "scale(1.1)" },
                 },
             },
         },
