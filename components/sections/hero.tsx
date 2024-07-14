@@ -8,7 +8,7 @@ import PulsatingButton from "@/components/ui/pulsating-button";
 import { Separator } from "@/components/ui/separator";
 import { ContainerScroll } from "@/components/ui/containerScrollAnimation";
 import TopToScroll from "@/components/ui/topToScroll";
-import CookieConsent from "@/components/ui/banner";
+import CookieConsent from "@/components/ui/bannerCookies";
 
 const Hero = () => {
     return (
