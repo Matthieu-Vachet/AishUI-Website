@@ -5,6 +5,7 @@ import React from "react";
 import { Features } from "@/components/ui/features";
 import GridFeature from "@/components/ui/gridFeature";
 import AnimatedElement from "@/components/ui/animatedElements";
+import { VideoModalComponent } from "../ui/videoModal";
 
 const AishUi = () => {
     return (
@@ -36,6 +37,9 @@ const AishUi = () => {
                     <div className="mx-auto text-lg leading-tight text-white/50 md:w-[80%]">
                         Compatible au dernier Patch{" "}
                         <span className=" text-gold-100 font-bold">10.2</span>
+                    </div>
+                    <div>
+                        <VideoModalComponent />
                     </div>
                 </div>
 

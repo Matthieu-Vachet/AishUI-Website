@@ -10,6 +10,7 @@ interface PulsatingButtonProps {
     animationDuration: string;
     buttonWidth: string;
     buttonHeight: string;
+    className?: string;
 }
 
 const PulsatingButton: React.FC<PulsatingButtonProps> = ({
@@ -20,6 +21,7 @@ const PulsatingButton: React.FC<PulsatingButtonProps> = ({
     animationDuration,
     buttonWidth,
     buttonHeight,
+    className,
 }) => {
     const pulseKeyframes = {
         "--tw-pulse-color": pulseColor,
@@ -29,7 +31,7 @@ const PulsatingButton: React.FC<PulsatingButtonProps> = ({
     return (
         <div className="flex items-center justify-center">
             <button
-                className="relative flex cursor-pointer items-center justify-center text-center"
+                className={`relative flex cursor-pointer items-center justify-center text-center ${className}`}
                 style={{
                     color: textColor,
                     backgroundColor,
@@ -39,7 +41,9 @@ const PulsatingButton: React.FC<PulsatingButtonProps> = ({
                     ...pulseKeyframes,
                 }}
             >
-                <div className="text-sm font-medium leading-none tracking-tight lg:text-lg">
+                <div
+                    className={`text-sm font-medium leading-none tracking-tight lg:text-lg ${className}`}
+                >
                     {text}
                 </div>
                 <style jsx>

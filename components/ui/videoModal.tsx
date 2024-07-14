@@ -1,8 +1,10 @@
 "use client";
 
 import * as React from "react";
+import Image from "next/image";
 import * as DialogPrimitive from "@radix-ui/react-dialog";
 import { cn } from "@/utils/cn";
+import { PlayIcon } from "@radix-ui/react-icons";
 
 const VideoModal = DialogPrimitive.Root;
 
@@ -36,7 +38,7 @@ const VideoModalContent = React.forwardRef<
         <DialogPrimitive.Content
             ref={ref}
             className={cn(
-                "fixed left-1/2 top-1/2 z-50 flex h-screen w-screen -translate-x-1/2 -translate-y-1/2 items-center justify-center p-3",
+                "fixed left-1/2 top-1/2 z-50 flex h-[80%] md:h-screen w-screen -translate-x-1/2 -translate-y-1/2 items-center justify-center p-3",
                 "data-[state=closed]:animate-modal-fade-out data-[state=open]:animate-modal-fade-in data-[state=closed]:slide-out-to-left-1/2 data-[state=closed]:slide-out-to-top-[50%] data-[state=open]:slide-in-from-left-1/2 data-[state=open]:slide-in-from-top-[50%] transition-all",
                 className,
             )}
@@ -190,6 +192,55 @@ const CloseIcon = React.forwardRef<
 
 CloseIcon.displayName = "CloseIcon";
 
+function VideoModalComponent() {
+    return (
+        <div className="flex justify-center items-center">
+            <VideoModal>
+                <VideoModalTrigger className="animate-scale-infinite">
+                    <span className="text-gold-100 font-bold text-lg md:text-lgtext-2xl lg:text-3xl text-center hover:text-white duration-500 ease-in-out ">
+                        Regarder la video de Présentation
+                    </span>
+                </VideoModalTrigger>
+                <VideoModalContent>
+                    <VideoModalTitle>
+                        Présentation de{" "}
+                        <span className="border-t-2 border-b-2 border-gold-100">
+                            Aish<span className="text-gold-100">UI</span>
+                        </span>
+                    </VideoModalTitle>
+                    <VideoModalDescription>
+                        UI inspirée et reconstruite à partir de BirgUI.v2
+                    </VideoModalDescription>
+                    <VideoModalVideo>
+                        <VideoPlayer>
+                            <VideoPreview>
+                                <Image
+                                    width={1600}
+                                    height={1200}
+                                    src="/image/videoYoutube.webp"
+                                    alt="Video preview"
+                                    className="size-full border border-gold-100 rounded-xl"
+                                />
+                            </VideoPreview>
+                            <VideoPlayButton>
+                                <span className="absolute inset-0 m-auto flex size-32 items-center justify-center rounded-full border-2 border-gold-100 bg-gold-100/30 transition duration-300 hover:bg-white/75">
+                                    <PlayIcon className="size-20 stroke-1 text-gold-100" />
+                                </span>
+                            </VideoPlayButton>
+                            <iframe
+                                className="size-full border border-gold-100 rounded-xl p-1"
+                                src="https://www.youtube.com/embed/xQ00oQ-yi2Q?si=HVdJD6ernKxdgv80"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowFullScreen
+                            />
+                        </VideoPlayer>
+                    </VideoModalVideo>
+                </VideoModalContent>
+            </VideoModal>
+        </div>
+    );
+}
+
 export {
     VideoModal,
     VideoModalTrigger,
@@ -200,4 +251,5 @@ export {
     VideoPreview,
     VideoPlayButton,
     VideoPlayer,
+    VideoModalComponent,
 };
